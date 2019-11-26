@@ -1,0 +1,85 @@
+body {
+	font-size: 10px;
+	font-family: 'Operator Mono', sans-serif;
+	font-weight: 400;
+	fill: #8c8c8c;
+	/* text-align: center; */
+	background-color: grey;
+	height: 100%;
+	margin: 25px;
+}
+
+#weatherRadial {
+	background-color: snow;
+	/* display: flex; */
+	padding: 15px;
+}
+
+svg {
+	background-color: rgb(241, 240, 240);
+}
+
+.title {
+	font-size: 28px;
+	fill: #4f4f4f;
+	font-weight: 300;
+	text-anchor: start;
+}
+
+.subtitle {
+	font-size: 14px;
+	fill: #aaaaaa;
+	font-weight: 300;
+	text-anchor: start;
+}
+
+.credit {
+	font-size: 12px;
+	fill: #aaaaaa;
+	font-weight: 300;
+	text-anchor: start;
+}
+
+.axis path,
+.axis tick,
+.axis line {
+	fill: none;
+	stroke: none;
+}
+
+.axis text {
+	font-size: 12px;
+	fill: #aaaaaa;
+	font-weight: 400;
+}
+
+.legendTitle {
+	font-size: 14px;
+	fill: #4f4f4f;
+	font-weight: 300;
+}
+
+.january {
+	font-size: 14px;
+	text-anchor: start;
+	font-weight: 300;
+	fill: #aaaaaa;
+}
+
+.yearLine {
+	stroke: #aaaaaa;
+}
+
+.axisText {
+	fill: #c4c4c4;
+	font-size: 11px;
+	font-weight: 300;
+	text-anchor: middle;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.axisCircles {
+	fill: none;
+	stroke: #e8e8e8;
+	stroke-width: 1px;
+}

@@ -1,6 +1,6 @@
-///////////////////////////////////////////////////////////////////////////
-//////////////////// Set up and initiate svg containers ///////////////////
-///////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+//////////////////// Set up and initiate svg containers ////////////////
+////////////////////////////////////////////////////////////////////////
 
 var margin = {
 	top: 20,
@@ -15,9 +15,10 @@ var height = window.innerHeight - margin.top - margin.bottom - 10;
 var svg = d3
 	.select('#weatherRadial')
 	.append('svg')
-	.attr('width', width + margin.left + margin.right - 100)
+	.attr('width', width + margin.left + margin.right - 10)
 	.attr('height', height + margin.top + margin.bottom - 50)
-	.style('background-color', 'snow')
+	// .style('background-color', 'snow')
+	.style('background-color', 'rgba(11, 11, 11, 0.8)')
 	// .style('background-color', 'rgba(240, 240, 240, 0.1)')
 	.style('border', '1px solid blue')
 	.append('g')
@@ -26,10 +27,37 @@ var svg = d3
 		'translate(' +
 			(margin.left + width / 2) +
 			',' +
-			(margin.top + height / 2) +
+			(margin.top + height / 1.5) +
 			')'
 	);
 
+////////////////////////////////////////////////////////////////////////
+//////////////////// Load weather data ///////////////////
+/////////////////////////////////////////////////////////////////////////
+// var squaw = require('/squaw.json');
+// console.log('sqauw: ', squaw);
+// let squawData;
+
+let squawData = [];
+// let squawData = d3.json('squaw.json', function(w) {
+d3.json('historical.json', function(w) {
+	var datesArr = [];
+	// let squawData = [];
+	// return w;
+	squawData = w.data.weather;
+
+	// console.log('historical-inner: ', squawData);
+	console.log('extract: ', w.data.weather);
+	var dates = squawData.forEach(function(d) {
+		// d.date = parseDate(d.date);
+		datesArr.push(parseDate(d.date).toDateString());
+		// console.log(`date: `, d.date);
+	});
+	console.log(`dates: `, datesArr);
+
+	return squawData;
+});
+// console.log('historical-outer: ', dat);
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////// Create scales ////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -38,9 +66,9 @@ var svg = d3
 var parseDate = d3.time.format('%Y-%m-%d').parse;
 
 //Turn strings into actual numbers/dates
-weatherData.forEach(function(d) {
+weatherSnowData.forEach(function(d) {
 	d.date = parseDate(d.date);
-	console.log(`date: `, d.date);
+	// console.log(`date: `, d.date);
 });
 
 //Set the minimum inner radius and max outer radius of the chart
@@ -50,15 +78,33 @@ var outerRadius = Math.min(width, height, 500) / 2,
 //Base the color scale on average temperature extremes
 var colorScale = d3.scale
 	.linear()
-	.domain([-15, 7.5, 30])
-	.range(['dodgerblue', '#ffff8c', 'crimson'])
+	.domain([-20, -10, 0, 10, 20, 30])
+	// .range(['dodgerblue', '#ffff8c', 'crimson'])
+	// .range(['snow', 'cyan', 'blue', 'green', '#ffff8c', 'crimson'])
+	// .range(['purple', 'dodgerblue', 'white', 'lightgreen', '#ffff8c', 'crimson'])
+	.range([
+		'purple',
+		'dodgerblue',
+		'powderblue',
+		'lightgreen',
+		'#ffff8c',
+		'crimson'
+	])
+	.interpolate(d3.interpolateHcl);
+
+var snowfallColorScale = d3.scale
+	.linear()
+	.domain([-10, 0, 2, 10, 40])
+	// .range(['dodgerblue', '#ffff8c', 'crimson'])
+	.range(['blue', 'cyan', 'powderblue', 'snow', 'white'])
 	.interpolate(d3.interpolateHcl);
 
 //Base the color scale on average temperature extremes
 var axisColorScale = d3.scale
 	.linear()
 	.domain([-15, 7.5, 30])
-	.range(['dodgerblue', '#ffff8c', 'crimson'])
+	.range(['blue', 'white', 'crimson'])
+	// .range(['purple', 'white', 'crimson'])
 	.interpolate(d3.interpolateHcl);
 
 //Scale for the heights of the bar, not starting at zero to give the bars an initial offset outward
@@ -67,13 +113,18 @@ var barScale = d3.scale
 	.range([innerRadius, outerRadius])
 	.domain([-15, 25]);
 
+var snowBarScale = d3.scale
+	.linear()
+	.range([innerRadius, outerRadius])
+	.domain([-40, -4]);
+
 //Scale to turn the date into an angle of 360 degrees in total
 //With the first datapoint (Jan 1st) on top
 var angle = d3.scale
 	.linear()
 	.range([-180, 180])
 	.domain(
-		d3.extent(weatherData, function(d) {
+		d3.extent(weatherSnowData, function(d) {
 			return d.date;
 		})
 	);
@@ -96,13 +147,13 @@ textWrapper
 	.attr('class', 'title')
 	.attr('x', 0)
 	.attr('y', -outerRadius - 40)
-	.text('Historic Daily Temperature Ranges');
+	.text('Annual Temperature');
 textWrapper
 	.append('text')
 	.attr('class', 'subtitle')
 	.attr('x', 0)
 	.attr('y', -outerRadius - 20)
-	.text('2015');
+	.text('Historic Ranges');
 
 //Append credit at bottom
 textWrapper
@@ -131,21 +182,15 @@ var axes = barWrapper
 axes
 	.append('circle')
 	.attr('class', 'axisCircles')
-	.style('stroke-width', 1)
+	.style('stroke-width', 4)
 	.style('stroke', function(d) {
 		return axisColorScale(d);
 	})
-	// .style('fill', 'azure')
-	// .style('fill', function(d, i) {
-	// 	return axisColorScale(d / 3);
-	// })
-	// .attr('offset', function(d, i) {
-	// 	return axisColorScale(i);
-	// })
-	.style('opacity', 0.4)
+	.style('opacity', 0.7)
 	.attr('r', function(d) {
 		return barScale(d);
 	});
+
 //Draw the axis labels
 axes
 	.append('text')
@@ -170,7 +215,7 @@ barWrapper
 //Add December for reference
 barWrapper
 	.append('text')
-	.attr('class', 'january')
+	.attr('class', 'december')
 	.attr('x', -75)
 	.attr('y', -outerRadius * 1.1)
 	.attr('dy', '2em')
@@ -178,7 +223,7 @@ barWrapper
 //Add a line to split the year
 barWrapper
 	.append('line')
-	.style('stroke-width', 0.5)
+	.style('stroke-width', 1.5)
 	.attr('class', 'yearLine')
 	.attr('x1', 0)
 	.attr('y1', -innerRadius * 0.15)
@@ -193,14 +238,14 @@ barWrapper
 //And the color is based on the mean temperature
 barWrapper
 	.selectAll('.tempBar')
-	.data(weatherData)
+	.data(weatherSnowData)
 	.enter()
 	.append('rect')
 	.attr('class', 'tempBar')
 	.attr('transform', function(d, i) {
 		return 'rotate(' + angle(d.date) + ')';
 	})
-	.attr('width', 1.5)
+	.attr('width', 2)
 	.attr('height', function(d, i) {
 		return barScale(d.max_temp) - barScale(d.min_temp);
 	})
@@ -211,6 +256,54 @@ barWrapper
 	.style('fill', function(d) {
 		return colorScale(d.mean_temp);
 	});
+
+barWrapper
+	.selectAll('.snowBar')
+	.data(weatherSnowData)
+	.enter()
+	.append('rect')
+	.attr('class', 'snowBar')
+	.attr('transform', function(d, i) {
+		return 'rotate(' + angle(d.date) + ')';
+	})
+	.attr('width', 5)
+	.attr('height', function(d, i) {
+		return snowBarScale(d.mean_snow) - snowBarScale(d.min_snow);
+		// return snowBarScale(d.max_snow) - snowBarScale(d.min_snow);
+	})
+	.attr('x', -0.75)
+	.attr('y', function(d, i) {
+		return snowBarScale(d.min_snow);
+	})
+	.style('fill', function(d) {
+		return snowfallColorScale(d.mean_snow);
+	})
+	.attr('rx', '1px')
+	.style('opacity', 0.98);
+
+barWrapper
+	.selectAll('.maxSnowBar')
+	.data(weatherSnowData)
+	.enter()
+	.append('rect')
+	.attr('class', 'maxSnowBar')
+	.attr('transform', function(d, i) {
+		return 'rotate(' + angle(d.date) + ')';
+	})
+	.attr('width', 6)
+	.attr('height', function(d, i) {
+		// return snowBarScale(d.mean_snow) - snowBarScale(d.min_snow);
+		return snowBarScale(d.max_snow) - snowBarScale(d.min_snow);
+	})
+	.attr('x', -0.75)
+	.attr('y', function(d, i) {
+		return snowBarScale(d.min_snow);
+	})
+	.style('fill', function(d) {
+		return snowfallColorScale(d.mean_snow);
+	})
+	.attr('rx', '5px')
+	.style('opacity', 0.3);
 
 ///////////////////////////////////////////////////////////////////////////
 //////////////// Create the gradient for the legend ///////////////////////
@@ -305,3 +398,5 @@ legendsvg
 	.attr('class', 'axis')
 	.attr('transform', 'translate(0,' + 10 + ')')
 	.call(xAxis);
+
+// console.log('sqauwData: ', squawData);

@@ -2,21 +2,23 @@ body {
 	font-size: 10px;
 	font-family: 'Operator Mono', sans-serif;
 	font-weight: 400;
-	fill: #8c8c8c;
+	/* fill: #8c8c8c; */
 	/* text-align: center; */
-	background-color: grey;
+	/* background-color: grey; */
 	height: 100%;
 	margin: 25px;
 }
 
 #weatherRadial {
-	background-color: snow;
+	/* background-color: snow; */
 	/* display: flex; */
+	background-color: rgb(187, 186, 186);
 	padding: 15px;
 }
 
 svg {
-	background-color: rgb(241, 240, 240);
+	/* background-color: rgba(58, 58, 58, 0.903); */
+	/* background-color: rgb(241, 240, 240); */
 }
 
 .title {
@@ -62,8 +64,16 @@ svg {
 .january {
 	font-size: 14px;
 	text-anchor: start;
+	font-weight: 500;
+	/* fill: #aaaaaa; */
+	fill: cyan;
+}
+
+.december {
+	font-size: 14px;
+	text-anchor: start;
 	font-weight: 300;
-	fill: #aaaaaa;
+	fill: pink;
 }
 
 .yearLine {

@@ -3,9 +3,9 @@
 ////////////////////////////////////////////////////////////////////////
 
 var margin = {
-	top: 20,
+	top: 100,
 	right: 20,
-	bottom: 20,
+	bottom: 180,
 	left: 20
 };
 var width = window.innerWidth - margin.left - margin.right - 10;
@@ -27,7 +27,7 @@ var svg = d3
 		'translate(' +
 			(margin.left + width / 2) +
 			',' +
-			(margin.top + height / 1.5) +
+			(margin.top + height / 1.9) +
 			')'
 	);
 
@@ -145,7 +145,7 @@ var textWrapper = svg
 textWrapper
 	.append('text')
 	.attr('class', 'title')
-	.attr('x', 0)
+	.attr('x', -140)
 	.attr('y', -outerRadius - 40)
 	.text('Annual Temperature');
 textWrapper
@@ -229,6 +229,26 @@ barWrapper
 	.attr('y1', -innerRadius * 0.15)
 	.attr('x2', 0)
 	.attr('y2', -outerRadius * 1.1);
+
+barWrapper
+	.append('line')
+	.style('stroke-width', 9.5)
+	.attr('class', 'seasonLine')
+	.attr('x1', 0)
+	.attr('y1', -innerRadius * 0.05)
+	.attr('y2', -245)
+	.attr('x2', -outerRadius * 0.7)
+	.style('opacity', 0.98);
+
+barWrapper
+	.append('line')
+	.style('stroke-width', 8.5)
+	.attr('class', 'seasonLine')
+	.attr('x1', 0)
+	.attr('x2', -outerRadius * -1.1)
+	.attr('y1', -innerRadius * 0.05)
+	.attr('y2', 125)
+	.style('opacity', 0.8);
 
 ///////////////////////////////////////////////////////////////////////////
 ////////////////////////////// Draw bars //////////////////////////////////

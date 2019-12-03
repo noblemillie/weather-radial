@@ -72,16 +72,13 @@ weatherSnowData.forEach(function(d) {
 });
 
 //Set the minimum inner radius and max outer radius of the chart
-var outerRadius = Math.min(width, height, 500) / 2,
+var outerRadius = Math.min(width, height, 450) / 2,
 	innerRadius = outerRadius * 0.2;
 
 //Base the color scale on average temperature extremes
 var colorScale = d3.scale
 	.linear()
 	.domain([-20, -10, 0, 10, 20, 30])
-	// .range(['dodgerblue', '#ffff8c', 'crimson'])
-	// .range(['snow', 'cyan', 'blue', 'green', '#ffff8c', 'crimson'])
-	// .range(['purple', 'dodgerblue', 'white', 'lightgreen', '#ffff8c', 'crimson'])
 	.range([
 		'purple',
 		'dodgerblue',
@@ -95,8 +92,13 @@ var colorScale = d3.scale
 var snowfallColorScale = d3.scale
 	.linear()
 	.domain([-10, 0, 2, 10, 40])
-	// .range(['dodgerblue', '#ffff8c', 'crimson'])
 	.range(['blue', 'cyan', 'powderblue', 'snow', 'white'])
+	.interpolate(d3.interpolateHcl);
+
+var historicalSnowfallColorScale = d3.scale
+	.linear()
+	.domain([0, 60])
+	.range(['blue', 'cyan', 'powderblue'])
 	.interpolate(d3.interpolateHcl);
 
 //Base the color scale on average temperature extremes
@@ -247,7 +249,7 @@ barWrapper
 	.attr('x1', 0)
 	.attr('x2', -outerRadius * -1.1)
 	.attr('y1', -innerRadius * 0.05)
-	.attr('y2', 125)
+	.attr('y2', 120)
 	.style('opacity', 0.8);
 
 ///////////////////////////////////////////////////////////////////////////
@@ -313,16 +315,18 @@ barWrapper
 	.attr('width', 6)
 	.attr('height', function(d, i) {
 		// return snowBarScale(d.mean_snow) - snowBarScale(d.min_snow);
-		return snowBarScale(d.max_snow) - snowBarScale(d.min_snow);
+		return snowBarScale(d.max_snow) - snowBarScale(d.mean_snow);
 	})
 	.attr('x', -0.75)
 	.attr('y', function(d, i) {
-		return snowBarScale(d.min_snow);
+		return snowBarScale(d.mean_snow + 0.5);
 	})
 	.style('fill', function(d) {
-		return snowfallColorScale(d.mean_snow);
+		return historicalSnowfallColorScale(
+			snowBarScale(d.max_snow) - snowBarScale(d.mean_snow)
+		);
 	})
-	.attr('rx', '5px')
+	// .attr('rx', '1px')
 	.style('opacity', 0.3);
 
 ///////////////////////////////////////////////////////////////////////////

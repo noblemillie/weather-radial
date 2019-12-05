@@ -314,7 +314,6 @@ barWrapper
 	})
 	.attr('width', 6)
 	.attr('height', function(d, i) {
-		// return snowBarScale(d.mean_snow) - snowBarScale(d.min_snow);
 		return snowBarScale(d.max_snow) - snowBarScale(d.mean_snow);
 	})
 	.attr('x', -0.75)
@@ -326,7 +325,6 @@ barWrapper
 			snowBarScale(d.max_snow) - snowBarScale(d.mean_snow)
 		);
 	})
-	// .attr('rx', '1px')
 	.style('opacity', 0.3);
 
 ///////////////////////////////////////////////////////////////////////////

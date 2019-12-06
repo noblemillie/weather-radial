@@ -1,7 +1,4 @@
-////////////////////////////////////////////////////////////////////////
 //////////////////// Set up and initiate svg containers ////////////////
-////////////////////////////////////////////////////////////////////////
-
 var margin = {
 	top: 100,
 	right: 20,
@@ -31,13 +28,7 @@ var svg = d3
 			')'
 	);
 
-////////////////////////////////////////////////////////////////////////
 //////////////////// Load weather data ///////////////////
-/////////////////////////////////////////////////////////////////////////
-// var squaw = require('/squaw.json');
-// console.log('sqauw: ', squaw);
-// let squawData;
-
 let squawData = [];
 // let squawData = d3.json('squaw.json', function(w) {
 d3.json('historical.json', function(w) {
@@ -58,10 +49,8 @@ d3.json('historical.json', function(w) {
 	return squawData;
 });
 // console.log('historical-outer: ', dat);
-///////////////////////////////////////////////////////////////////////////
-//////////////////////////// Create scales ////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
 
+//////////////////////////// Create scales ////////////////////////////////
 //Parses a string into a date
 var parseDate = d3.time.format('%Y-%m-%d').parse;
 
@@ -78,11 +67,12 @@ var outerRadius = Math.min(width, height, 450) / 2,
 //Base the color scale on average temperature extremes
 var colorScale = d3.scale
 	.linear()
-	.domain([-20, -10, 0, 10, 20, 30])
+	.domain([-15, -10, 0, 10, 15, 28])
 	.range([
 		'purple',
 		'dodgerblue',
-		'powderblue',
+		'white',
+		// 'powderblue',
 		'lightgreen',
 		'#ffff8c',
 		'crimson'
@@ -91,14 +81,14 @@ var colorScale = d3.scale
 
 var snowfallColorScale = d3.scale
 	.linear()
-	.domain([-10, 0, 2, 10, 40])
-	.range(['blue', 'cyan', 'powderblue', 'snow', 'white'])
+	.domain([0, 2, 10, 40])
+	.range(['powderblue', 'snow', 'white'])
 	.interpolate(d3.interpolateHcl);
 
 var historicalSnowfallColorScale = d3.scale
 	.linear()
-	.domain([0, 60])
-	.range(['blue', 'cyan', 'powderblue'])
+	.domain([0, 90])
+	.range(['blue', 'cyan'])
 	.interpolate(d3.interpolateHcl);
 
 //Base the color scale on average temperature extremes
@@ -106,7 +96,6 @@ var axisColorScale = d3.scale
 	.linear()
 	.domain([-15, 7.5, 30])
 	.range(['blue', 'white', 'crimson'])
-	// .range(['purple', 'white', 'crimson'])
 	.interpolate(d3.interpolateHcl);
 
 //Scale for the heights of the bar, not starting at zero to give the bars an initial offset outward
@@ -131,10 +120,7 @@ var angle = d3.scale
 		})
 	);
 
-///////////////////////////////////////////////////////////////////////////
 //////////////////////////// Create Titles ////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
 var textWrapper = svg
 	.append('g')
 	.attr('class', 'textWrapper')
@@ -147,28 +133,25 @@ var textWrapper = svg
 textWrapper
 	.append('text')
 	.attr('class', 'title')
-	.attr('x', -140)
-	.attr('y', -outerRadius - 40)
+	.attr('x', -150)
+	.attr('y', -outerRadius - 100)
 	.text('Annual Temperature');
 textWrapper
 	.append('text')
 	.attr('class', 'subtitle')
-	.attr('x', 0)
-	.attr('y', -outerRadius - 20)
-	.text('Historic Ranges');
+	.attr('x', -150)
+	.attr('y', -outerRadius - 80)
+	.text('Historic Temperature & Snowfall Ranges');
 
 //Append credit at bottom
 textWrapper
 	.append('text')
 	.attr('class', 'credit')
-	.attr('x', 0)
-	.attr('y', outerRadius + 120)
-	.text('Based on weather-radials.com');
+	.attr('x', 20)
+	.attr('y', outerRadius + 140)
+	.text('Inspired by weather-radials.com');
 
-///////////////////////////////////////////////////////////////////////////
 ///////////////////////////// Create Axes /////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
 //Wrapper for the bars and to position it downward
 var barWrapper = svg
 	.append('g')
@@ -231,6 +214,53 @@ barWrapper
 	.attr('y1', -innerRadius * 0.15)
 	.attr('x2', 0)
 	.attr('y2', -outerRadius * 1.1);
+//Add a line to split Jan/Feb
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('x1', 0)
+	.attr('y1', -innerRadius * 0.15)
+	.attr('x2', 120)
+	.attr('y2', -outerRadius * 0.9);
+
+//Add a line to split Feb/Mar
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('x1', 0)
+	.attr('y1', -innerRadius * 0.1)
+	.attr('x2', 210)
+	.attr('y2', -outerRadius * 0.5);
+
+//Add a line to split the year
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('y1', 0)
+	.attr('x1', -innerRadius * 0.15)
+	.attr('y2', 0)
+	.attr('x2', -outerRadius * 1.1);
+//Add a line to split the year
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('y1', 0)
+	.attr('x1', innerRadius * 0.15)
+	.attr('y2', 0)
+	.attr('x2', outerRadius * 1.1);
+//Add a line to split the year
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('x1', 0)
+	.attr('y1', innerRadius * 0.15)
+	.attr('x2', 0)
+	.attr('y2', outerRadius * 1.1);
 
 barWrapper
 	.append('line')
@@ -252,12 +282,9 @@ barWrapper
 	.attr('y2', 120)
 	.style('opacity', 0.8);
 
-///////////////////////////////////////////////////////////////////////////
 ////////////////////////////// Draw bars //////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-//Draw a bar per day were the height is the difference between the minimum and maximum temperature
-//And the color is based on the mean temperature
+// tempBar height is the difference between the minimum and maximum temperature
+// tempBar color is based on the mean temperature
 barWrapper
 	.selectAll('.tempBar')
 	.data(weatherSnowData)
@@ -288,20 +315,20 @@ barWrapper
 	.attr('transform', function(d, i) {
 		return 'rotate(' + angle(d.date) + ')';
 	})
-	.attr('width', 5)
+	.attr('width', 3)
 	.attr('height', function(d, i) {
 		return snowBarScale(d.mean_snow) - snowBarScale(d.min_snow);
 		// return snowBarScale(d.max_snow) - snowBarScale(d.min_snow);
 	})
-	.attr('x', -0.75)
+	.attr('x', -0.25)
 	.attr('y', function(d, i) {
-		return snowBarScale(d.min_snow);
+		return snowBarScale(d.min_snow + 1);
 	})
 	.style('fill', function(d) {
 		return snowfallColorScale(d.mean_snow);
 	})
 	.attr('rx', '1px')
-	.style('opacity', 0.98);
+	.style('opacity', 0.95);
 
 barWrapper
 	.selectAll('.maxSnowBar')
@@ -312,25 +339,22 @@ barWrapper
 	.attr('transform', function(d, i) {
 		return 'rotate(' + angle(d.date) + ')';
 	})
-	.attr('width', 6)
+	.attr('width', 4)
 	.attr('height', function(d, i) {
 		return snowBarScale(d.max_snow) - snowBarScale(d.mean_snow);
 	})
 	.attr('x', -0.75)
 	.attr('y', function(d, i) {
-		return snowBarScale(d.mean_snow + 0.5);
+		return snowBarScale(d.mean_snow + 1);
 	})
 	.style('fill', function(d) {
 		return historicalSnowfallColorScale(
 			snowBarScale(d.max_snow) - snowBarScale(d.mean_snow)
 		);
 	})
-	.style('opacity', 0.3);
+	.style('opacity', 0.25);
 
-///////////////////////////////////////////////////////////////////////////
 //////////////// Create the gradient for the legend ///////////////////////
-///////////////////////////////////////////////////////////////////////////
-
 //Extra scale since the color scale is interpolated
 var tempScale = d3.scale
 	.linear()
@@ -366,10 +390,7 @@ svg
 		return colorScale(tempPoint[i]);
 	});
 
-///////////////////////////////////////////////////////////////////////////
 ////////////////////////// Draw the legend ////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
 var legendWidth = Math.min(outerRadius * 2, 400);
 
 //Color Legend container
@@ -396,7 +417,7 @@ legendsvg
 	.attr('x', 0)
 	.attr('y', -10)
 	.style('text-anchor', 'middle')
-	.text('Average Daily Temperature');
+	.text('Historical Average Temperature');
 
 //Set scale for x-axis
 var xScale = d3.scale
@@ -420,5 +441,3 @@ legendsvg
 	.attr('class', 'axis')
 	.attr('transform', 'translate(0,' + 10 + ')')
 	.call(xAxis);
-
-// console.log('sqauwData: ', squawData);

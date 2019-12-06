@@ -57,7 +57,8 @@ svg {
 
 .legendTitle {
 	font-size: 14px;
-	fill: #4f4f4f;
+	/* fill: #4f4f4f; */
+	fill: snow;
 	font-weight: 300;
 }
 

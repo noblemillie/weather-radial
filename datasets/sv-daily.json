@@ -1,0 +1,2322 @@
+[
+    {
+        "day": "January 1",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 105,
+        "8000-new": 1,
+        "8000-cumulative": 188
+    },
+    {
+        "day": "January 2",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 61,
+        "8000-new": 8,
+        "8000-cumulative": 109
+    },
+    {
+        "day": "January 3",
+        "year": 2017,
+        "6200-new": 17,
+        "6200-cumulative": 78,
+        "8000-new": 22,
+        "8000-cumulative": 131
+    },
+    {
+        "day": "January 4",
+        "year": 2017,
+        "6200-new": 15,
+        "6200-cumulative": 93,
+        "8000-new": 23,
+        "8000-cumulative": 154
+    },
+    {
+        "day": "January 4",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 1,
+        "8000-cumulative": 70
+    },
+    {
+        "day": "January 5",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 106,
+        "8000-new": 2,
+        "8000-cumulative": 190
+    },
+    {
+        "day": "January 5",
+        "year": 2017,
+        "6200-new": 16,
+        "6200-cumulative": 109,
+        "8000-new": 30,
+        "8000-cumulative": 184
+    },
+    {
+        "day": "January 6",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 4,
+        "8000-cumulative": 74
+    },
+    {
+        "day": "January 6",
+        "year": 2106,
+        "6200-new": 8,
+        "6200-cumulative": 114,
+        "8000-new": 12,
+        "8000-cumulative": 202
+    },
+    {
+        "day": "January 7",
+        "year": 2016,
+        "6200-new": 7,
+        "6200-cumulative": 121,
+        "8000-new": 8,
+        "8000-cumulative": 210
+    },
+    {
+        "day": "January 7",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 1,
+        "8000-cumulative": 75
+    },
+    {
+        "day": "January 8",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 109,
+        "8000-new": 11,
+        "8000-cumulative": 195
+    },
+    {
+        "day": "January 9",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 122,
+        "8000-new": 1,
+        "8000-cumulative": 211
+    },
+    {
+        "day": "January 9",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 110,
+        "8000-new": 3,
+        "8000-cumulative": 198
+    },
+    {
+        "day": "January 9",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 3,
+        "8000-cumulative": 78
+    },
+    {
+        "day": "January 10",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 124,
+        "8000-new": 2,
+        "8000-cumulative": 213
+    },
+    {
+        "day": "January 10",
+        "year": 2017,
+        "6200-new": 22,
+        "6200-cumulative": 132,
+        "8000-new": 27,
+        "8000-cumulative": 225
+    },
+    {
+        "day": "January 10",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 1,
+        "8000-cumulative": 79
+    },
+    {
+        "day": "January 11",
+        "year": 2017,
+        "6200-new": 31,
+        "6200-cumulative": 163,
+        "8000-new": 37,
+        "8000-cumulative": 262
+    },
+    {
+        "day": "January 11",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 1,
+        "8000-cumulative": 80
+    },
+    {
+        "day": "January 12",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 33,
+        "8000-new": 3,
+        "8000-cumulative": 62
+    },
+    {
+        "day": "January 12",
+        "year": 2017,
+        "6200-new": 5,
+        "6200-cumulative": 168,
+        "8000-new": 9,
+        "8000-cumulative": 271
+    },
+    {
+        "day": "January 13",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 125,
+        "8000-new": 1,
+        "8000-cumulative": 214
+    },
+    {
+        "day": "January 13",
+        "year": 2017,
+        "6200-new": 9,
+        "6200-cumulative": 177,
+        "8000-new": 10,
+        "8000-cumulative": 281
+    },
+    {
+        "day": "January 14",
+        "year": 2016,
+        "6200-new": 8,
+        "6200-cumulative": 133,
+        "8000-new": 12,
+        "8000-cumulative": 226
+    },
+    {
+        "day": "January 15",
+        "year": 2016,
+        "6200-new": 7,
+        "6200-cumulative": 140,
+        "8000-new": 11,
+        "8000-cumulative": 237
+    },
+    {
+        "day": "January 16",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 141,
+        "8000-new": 2,
+        "8000-cumulative": 239
+    },
+    {
+        "day": "January 17",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 141,
+        "8000-new": 2,
+        "8000-cumulative": 241
+    },
+    {
+        "day": "January 17",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 12,
+        "8000-new": 1,
+        "8000-cumulative": 81
+    },
+    {
+        "day": "January 18",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 141,
+        "8000-new": 4,
+        "8000-cumulative": 245
+    },
+    {
+        "day": "January 19",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 141,
+        "8000-new": 5,
+        "8000-cumulative": 250
+    },
+    {
+        "day": "January 19",
+        "year": 2017,
+        "6200-new": 13,
+        "6200-cumulative": 190,
+        "8000-new": 15,
+        "8000-cumulative": 296
+    },
+    {
+        "day": "January 19",
+        "year": 2018,
+        "6200-new": 6,
+        "6200-cumulative": 18,
+        "8000-new": 10,
+        "8000-cumulative": 91
+    },
+    {
+        "day": "January 20",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 143,
+        "8000-new": 9,
+        "8000-cumulative": 259
+    },
+    {
+        "day": "January 20",
+        "year": 2017,
+        "6200-new": 11,
+        "6200-cumulative": 201,
+        "8000-new": 13,
+        "8000-cumulative": 309
+    },
+    {
+        "day": "January 20",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 18,
+        "8000-new": 1,
+        "8000-cumulative": 92
+    },
+    {
+        "day": "January 21",
+        "year": 2017,
+        "6200-new": 15,
+        "6200-cumulative": 216,
+        "8000-new": 19,
+        "8000-cumulative": 328
+    },
+    {
+        "day": "January 22",
+        "year": 2017,
+        "6200-new": 10,
+        "6200-cumulative": 226,
+        "8000-new": 16,
+        "8000-cumulative": 344
+    },
+    {
+        "day": "January 22",
+        "year": 2018,
+        "6200-new": 1,
+        "6200-cumulative": 19,
+        "8000-new": 1,
+        "8000-cumulative": 93
+    },
+    {
+        "day": "January 23",
+        "year": 2016,
+        "6200-new": 4,
+        "6200-cumulative": 147,
+        "8000-new": 10,
+        "8000-cumulative": 269
+    },
+    {
+        "day": "January 23",
+        "year": 2017,
+        "6200-new": 20,
+        "6200-cumulative": 246,
+        "8000-new": 29,
+        "8000-cumulative": 373
+    },
+    {
+        "day": "January 23",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 19,
+        "8000-new": 1,
+        "8000-cumulative": 94
+    },
+    {
+        "day": "January 24",
+        "year": 2016,
+        "6200-new": 4,
+        "6200-cumulative": 151,
+        "8000-new": 5,
+        "8000-cumulative": 274
+    },
+    {
+        "day": "January 24",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 250,
+        "8000-new": 5,
+        "8000-cumulative": 378
+    },
+    {
+        "day": "January 25",
+        "year": 2018,
+        "6200-new": 12,
+        "6200-cumulative": 31,
+        "8000-new": 12,
+        "8000-cumulative": 106
+    },
+    {
+        "day": "January 26",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 250,
+        "8000-new": 1,
+        "8000-cumulative": 379
+    },
+    {
+        "day": "January 26",
+        "year": 2018,
+        "6200-new": 9,
+        "6200-cumulative": 40,
+        "8000-new": 12,
+        "8000-cumulative": 118
+    },
+    {
+        "day": "January 28",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 33,
+        "8000-new": 4,
+        "8000-cumulative": 114
+    },
+    {
+        "day": "January 30",
+        "year": 2014,
+        "6200-new": 3,
+        "6200-cumulative": 36,
+        "8000-new": 6,
+        "8000-cumulative": 68
+    },
+    {
+        "day": "January 30",
+        "year": 2016,
+        "6200-new": 4,
+        "6200-cumulative": 155,
+        "8000-new": 8,
+        "8000-cumulative": 282
+    },
+    {
+        "day": "January 31",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 38,
+        "8000-new": 4,
+        "8000-cumulative": 72
+    },
+    {
+        "day": "January 31",
+        "year": 2016,
+        "6200-new": 4,
+        "6200-cumulative": 159,
+        "8000-new": 7,
+        "8000-cumulative": 289
+    },
+    {
+        "day": "February 1",
+        "year": 2016,
+        "6200-new": 3,
+        "6200-cumulative": 162,
+        "8000-new": 4,
+        "8000-cumulative": 293
+    },
+    {
+        "day": "February 2",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 250,
+        "8000-new": 1,
+        "8000-cumulative": 380
+    },
+    {
+        "day": "February 3",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 40,
+        "8000-new": 4,
+        "8000-cumulative": 76
+    },
+    {
+        "day": "February 3",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 250,
+        "8000-new": 7,
+        "8000-cumulative": 387
+    },
+    {
+        "day": "February 4",
+        "year": 2017,
+        "6200-new": 6,
+        "6200-cumulative": 256,
+        "8000-new": 20,
+        "8000-cumulative": 407
+    },
+    {
+        "day": "February 5",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 257,
+        "8000-new": 2,
+        "8000-cumulative": 409
+    },
+    {
+        "day": "February 6",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 41,
+        "8000-new": 2,
+        "8000-cumulative": 78
+    },
+    {
+        "day": "February 6",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 261,
+        "8000-new": 6,
+        "8000-cumulative": 415
+    },
+    {
+        "day": "February 7",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 43,
+        "8000-new": 4,
+        "8000-cumulative": 82
+    },
+    {
+        "day": "February 7",
+        "year": 2015,
+        "6200-new": 3,
+        "6200-cumulative": 36,
+        "8000-new": 15,
+        "8000-cumulative": 129
+    },
+    {
+        "day": "February 7",
+        "year": 2017,
+        "6200-new": 9,
+        "6200-cumulative": 270,
+        "8000-new": 20,
+        "8000-cumulative": 435
+    },
+    {
+        "day": "February 8",
+        "year": 2014,
+        "6200-new": 5,
+        "6200-cumulative": 48,
+        "8000-new": 16,
+        "8000-cumulative": 98
+    },
+    {
+        "day": "February 8",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 36,
+        "8000-new": 3,
+        "8000-cumulative": 132
+    },
+    {
+        "day": "February 9",
+        "year": 2014,
+        "6200-new": 0.5,
+        "6200-cumulative": 48.5,
+        "8000-new": 38,
+        "8000-cumulative": 136
+    },
+    {
+        "day": "February 9",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 37,
+        "8000-new": 5,
+        "8000-cumulative": 137
+    },
+    {
+        "day": "February 10",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 49.5,
+        "8000-new": 8,
+        "8000-cumulative": 144
+    },
+    {
+        "day": "February 10",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 38,
+        "8000-new": 3,
+        "8000-cumulative": 140
+    },
+    {
+        "day": "February 10",
+        "year": 2017,
+        "6200-new": 9,
+        "6200-cumulative": 279,
+        "8000-new": 32,
+        "8000-cumulative": 467
+    },
+    {
+        "day": "February 11",
+        "year": 2017,
+        "6200-new": 6,
+        "6200-cumulative": 285,
+        "8000-new": 9,
+        "8000-cumulative": 476
+    },
+    {
+        "day": "February 12",
+        "year": 2018,
+        "6200-new": 2,
+        "6200-cumulative": 42,
+        "8000-new": 4,
+        "8000-cumulative": 122
+    },
+    {
+        "day": "February 13",
+        "year": 2018,
+        "6200-new": 1,
+        "6200-cumulative": 43,
+        "8000-new": 2,
+        "8000-cumulative": 124
+    },
+    {
+        "day": "February 16",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 50.5,
+        "8000-new": 3,
+        "8000-cumulative": 147
+    },
+    {
+        "day": "February 17",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 289,
+        "8000-new": 8,
+        "8000-cumulative": 484
+    },
+    {
+        "day": "February 18",
+        "year": 2016,
+        "6200-new": 13,
+        "6200-cumulative": 175,
+        "8000-new": 20,
+        "8000-cumulative": 313
+    },
+    {
+        "day": "February 18",
+        "year": 2017,
+        "6200-new": 9,
+        "6200-cumulative": 298,
+        "8000-new": 12,
+        "8000-cumulative": 496
+    },
+    {
+        "day": "February 19",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 50.5,
+        "8000-new": 1,
+        "8000-cumulative": 148
+    },
+    {
+        "day": "February 19",
+        "year": 2016,
+        "6200-new": 7,
+        "6200-cumulative": 182,
+        "8000-new": 10,
+        "8000-cumulative": 323
+    },
+    {
+        "day": "February 19",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 300,
+        "8000-new": 7,
+        "8000-cumulative": 503
+    },
+    {
+        "day": "February 19",
+        "year": 2018,
+        "6200-new": 2,
+        "6200-cumulative": 45,
+        "8000-new": 6,
+        "8000-cumulative": 130
+    },
+    {
+        "day": "February 20",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 50.5,
+        "8000-new": 1,
+        "8000-cumulative": 149
+    },
+    {
+        "day": "February 20",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 183,
+        "8000-new": 1,
+        "8000-cumulative": 324
+    },
+    {
+        "day": "February 20",
+        "year": 2017,
+        "6200-new": 3,
+        "6200-cumulative": 303,
+        "8000-new": 8,
+        "8000-cumulative": 511
+    },
+    {
+        "day": "February 21",
+        "year": 2017,
+        "6200-new": 18,
+        "6200-cumulative": 321,
+        "8000-new": 28,
+        "8000-cumulative": 539
+    },
+    {
+        "day": "February 22",
+        "year": 2017,
+        "6200-new": 21,
+        "6200-cumulative": 342,
+        "8000-new": 22,
+        "8000-cumulative": 561
+    },
+    {
+        "day": "February 23",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 344,
+        "8000-new": 5,
+        "8000-cumulative": 566
+    },
+    {
+        "day": "February 23",
+        "year": 2018,
+        "6200-new": 6,
+        "6200-cumulative": 51,
+        "8000-new": 10,
+        "8000-cumulative": 140
+    },
+    {
+        "day": "February 25",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 346,
+        "8000-new": 3,
+        "8000-cumulative": 569
+    },
+    {
+        "day": "February 25",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 51,
+        "8000-new": 1,
+        "8000-cumulative": 141
+    },
+    {
+        "day": "February 26",
+        "year": 2018,
+        "6200-new": 1,
+        "6200-cumulative": 52,
+        "8000-new": 2,
+        "8000-cumulative": 143
+    },
+    {
+        "day": "February 27",
+        "year": 2014,
+        "6200-new": 4,
+        "6200-cumulative": 54.5,
+        "8000-new": 10,
+        "8000-cumulative": 159
+    },
+    {
+        "day": "February 27",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 350,
+        "8000-new": 6,
+        "8000-cumulative": 575
+    },
+    {
+        "day": "February 27",
+        "year": 2018,
+        "6200-new": 14,
+        "6200-cumulative": 66,
+        "8000-new": 18,
+        "8000-cumulative": 161
+    },
+    {
+        "day": "February 28",
+        "year": 2014,
+        "6200-new": 4,
+        "6200-cumulative": 58.5,
+        "8000-new": 12,
+        "8000-cumulative": 171
+    },
+    {
+        "day": "February 28",
+        "year": 2015,
+        "6200-new": 12,
+        "6200-cumulative": 50,
+        "8000-new": 17,
+        "8000-cumulative": 157
+    },
+    {
+        "day": "March 1",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 60.5,
+        "8000-new": 8,
+        "8000-cumulative": 179
+    },
+    {
+        "day": "March 1",
+        "year": 2015,
+        "6200-new": 11,
+        "6200-cumulative": 66,
+        "8000-new": 15,
+        "8000-cumulative": 172
+    },
+    {
+        "day": "March 1",
+        "year": 2018,
+        "6200-new": 7,
+        "6200-cumulative": 73,
+        "8000-new": 4,
+        "8000-cumulative": 165
+    },
+    {
+        "day": "March 2",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 60.5,
+        "8000-new": 3,
+        "8000-cumulative": 182
+    },
+    {
+        "day": "March 2",
+        "year": 2018,
+        "6200-new": 30,
+        "6200-cumulative": 103,
+        "8000-new": 32,
+        "8000-cumulative": 197
+    },
+    {
+        "day": "March 3",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 60.5,
+        "8000-new": 4,
+        "8000-cumulative": 186
+    },
+    {
+        "day": "March 3",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 67,
+        "8000-new": 1,
+        "8000-cumulative": 173
+    },
+    {
+        "day": "March 3",
+        "year": 2018,
+        "6200-new": 31,
+        "6200-cumulative": 134,
+        "8000-new": 36,
+        "8000-cumulative": 233
+    },
+    {
+        "day": "March 4",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 62.5,
+        "8000-new": 8,
+        "8000-cumulative": 194
+    },
+    {
+        "day": "March 4",
+        "year": 2018,
+        "6200-new": 9,
+        "6200-cumulative": 143,
+        "8000-new": 10,
+        "8000-cumulative": 243
+    },
+    {
+        "day": "March 5",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 183,
+        "8000-new": 8,
+        "8000-cumulative": 332
+    },
+    {
+        "day": "March 5",
+        "year": 2017,
+        "6200-new": 9,
+        "6200-cumulative": 359,
+        "8000-new": 10,
+        "8000-cumulative": 585
+    },
+    {
+        "day": "March 6",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 62.5,
+        "8000-new": 2,
+        "8000-cumulative": 196
+    },
+    {
+        "day": "March 6",
+        "year": 2016,
+        "6200-new": 7,
+        "6200-cumulative": 190,
+        "8000-new": 20,
+        "8000-cumulative": 352
+    },
+    {
+        "day": "March 6",
+        "year": 2017,
+        "6200-new": 24,
+        "6200-cumulative": 383,
+        "8000-new": 31,
+        "8000-cumulative": 616
+    },
+    {
+        "day": "March 7",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 62.5,
+        "8000-new": 1.5,
+        "8000-cumulative": 197.5
+    },
+    {
+        "day": "March 7",
+        "year": 2016,
+        "6200-new": 11,
+        "6200-cumulative": 201,
+        "8000-new": 21,
+        "8000-cumulative": 373
+    },
+    {
+        "day": "March 7",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 387,
+        "8000-new": 7,
+        "8000-cumulative": 623
+    },
+    {
+        "day": "March 8",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 203,
+        "8000-new": 7,
+        "8000-cumulative": 380
+    },
+    {
+        "day": "March 9",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 203,
+        "8000-new": 2,
+        "8000-cumulative": 382
+    },
+    {
+        "day": "March 11",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 62.5,
+        "8000-new": 4,
+        "8000-cumulative": 201.5
+    },
+    {
+        "day": "March 11",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 203,
+        "8000-new": 2,
+        "8000-cumulative": 384
+    },
+    {
+        "day": "March 11",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 143,
+        "8000-new": 3,
+        "8000-cumulative": 246
+    },
+    {
+        "day": "March 12",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 67,
+        "8000-new": 1,
+        "8000-cumulative": 174
+    },
+    {
+        "day": "March 12",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 204,
+        "8000-new": 7,
+        "8000-cumulative": 391
+    },
+    {
+        "day": "March 13",
+        "year": 2016,
+        "6200-new": 10,
+        "6200-cumulative": 214,
+        "8000-new": 18,
+        "8000-cumulative": 409
+    },
+    {
+        "day": "March 14",
+        "year": 2016,
+        "6200-new": 9,
+        "6200-cumulative": 223,
+        "8000-new": 26,
+        "8000-cumulative": 435
+    },
+    {
+        "day": "March 14",
+        "year": 2018,
+        "6200-new": 7,
+        "6200-cumulative": 150,
+        "8000-new": 12,
+        "8000-cumulative": 258
+    },
+    {
+        "day": "March 15",
+        "year": 2018,
+        "6200-new": 15,
+        "6200-cumulative": 165,
+        "8000-new": 16,
+        "8000-cumulative": 274
+    },
+    {
+        "day": "March 16",
+        "year": 2018,
+        "6200-new": 21,
+        "6200-cumulative": 186,
+        "8000-new": 23,
+        "8000-cumulative": 297
+    },
+    {
+        "day": "March 17",
+        "year": 2018,
+        "6200-new": 30,
+        "6200-cumulative": 216,
+        "8000-new": 41,
+        "8000-cumulative": 338
+    },
+    {
+        "day": "March 18",
+        "year": 2018,
+        "6200-new": 3,
+        "6200-cumulative": 219,
+        "8000-new": 8,
+        "8000-cumulative": 346
+    },
+    {
+        "day": "March 21",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 223,
+        "8000-new": 3,
+        "8000-cumulative": 438
+    },
+    {
+        "day": "March 21",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 387,
+        "8000-new": 2,
+        "8000-cumulative": 625
+    },
+    {
+        "day": "March 21",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 219,
+        "8000-new": 3,
+        "8000-cumulative": 349
+    },
+    {
+        "day": "March 22",
+        "year": 2016,
+        "6200-new": 8,
+        "6200-cumulative": 231,
+        "8000-new": 14,
+        "8000-cumulative": 452
+    },
+    {
+        "day": "March 22",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 389,
+        "8000-new": 6,
+        "8000-cumulative": 632
+    },
+    {
+        "day": "March 22",
+        "year": 2018,
+        "6200-new": 1,
+        "6200-cumulative": 220,
+        "8000-new": 11,
+        "8000-cumulative": 360
+    },
+    {
+        "day": "March 23",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 68,
+        "8000-new": 4,
+        "8000-cumulative": 178
+    },
+    {
+        "day": "March 23",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 232,
+        "8000-new": 2,
+        "8000-cumulative": 454
+    },
+    {
+        "day": "March 23",
+        "year": 2017,
+        "6200-new": 3,
+        "6200-cumulative": 392,
+        "8000-new": 7,
+        "8000-cumulative": 638
+    },
+    {
+        "day": "March 23",
+        "year": 2018,
+        "6200-new": 1,
+        "6200-cumulative": 221,
+        "8000-new": 12,
+        "8000-cumulative": 372
+    },
+    {
+        "day": "March 24",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 69,
+        "8000-new": 3,
+        "8000-cumulative": 181
+    },
+    {
+        "day": "March 24",
+        "year": 2018,
+        "6200-new": 1,
+        "6200-cumulative": 222,
+        "8000-new": 1,
+        "8000-cumulative": 373
+    },
+    {
+        "day": "March 25",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 396,
+        "8000-new": 9,
+        "8000-cumulative": 647
+    },
+    {
+        "day": "March 25",
+        "year": 2018,
+        "6200-new": 4,
+        "6200-cumulative": 226,
+        "8000-new": 15,
+        "8000-cumulative": 388
+    },
+    {
+        "day": "March 26",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 64.5,
+        "8000-new": 6,
+        "8000-cumulative": 207.5
+    },
+    {
+        "day": "March 27",
+        "year": 2014,
+        "6200-new": 6,
+        "6200-cumulative": 70.5,
+        "8000-new": 13,
+        "8000-cumulative": 220.5
+    },
+    {
+        "day": "March 27",
+        "year": 2017,
+        "6200-new": 3,
+        "6200-cumulative": 399,
+        "8000-new": 7,
+        "8000-cumulative": 654
+    },
+    {
+        "day": "March 28",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 234,
+        "8000-new": 3,
+        "8000-cumulative": 457
+    },
+    {
+        "day": "March 29",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 70.5,
+        "8000-new": 4,
+        "8000-cumulative": 224.5
+    },
+    {
+        "day": "March 29",
+        "year": 2016,
+        "6200-new": 3,
+        "6200-cumulative": 237,
+        "8000-new": 5,
+        "8000-cumulative": 462
+    },
+    {
+        "day": "March 30",
+        "year": 2014,
+        "6200-new": 10,
+        "6200-cumulative": 80.5,
+        "8000-new": 20,
+        "8000-cumulative": 244.5
+    },
+    {
+        "day": "March 30",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 237,
+        "8000-new": 1,
+        "8000-cumulative": 463
+    },
+    {
+        "day": "March 31",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 80.5,
+        "8000-new": 2,
+        "8000-cumulative": 246.5
+    },
+    {
+        "day": "March 31",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 400,
+        "8000-new": 3,
+        "8000-cumulative": 657
+    },
+    {
+        "day": "April 1",
+        "year": 2014,
+        "6200-new": 3,
+        "6200-cumulative": 83.5,
+        "8000-new": 16,
+        "8000-cumulative": 262.5
+    },
+    {
+        "day": "April 2",
+        "year": 2014,
+        "6200-new": 4,
+        "6200-cumulative": 87.5,
+        "8000-new": 5,
+        "8000-cumulative": 267.5
+    },
+    {
+        "day": "April 5",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 87.5,
+        "8000-new": 1,
+        "8000-cumulative": 268.5
+    },
+    {
+        "day": "April 6",
+        "year": 2015,
+        "6200-new": 4,
+        "6200-cumulative": 73,
+        "8000-new": 8,
+        "8000-cumulative": 189
+    },
+    {
+        "day": "April 6",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 226,
+        "8000-new": 1,
+        "8000-cumulative": 389
+    },
+    {
+        "day": "April 7",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 402,
+        "8000-new": 12,
+        "8000-cumulative": 669
+    },
+    {
+        "day": "April 8",
+        "year": 2015,
+        "6200-new": 6,
+        "6200-cumulative": 79,
+        "8000-new": 12,
+        "8000-cumulative": 201
+    },
+    {
+        "day": "April 8",
+        "year": 2017,
+        "6200-new": 8,
+        "6200-cumulative": 410,
+        "8000-new": 13,
+        "8000-cumulative": 682
+    },
+    {
+        "day": "April 9",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 411,
+        "8000-new": 3,
+        "8000-cumulative": 685
+    },
+    {
+        "day": "April 10",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 237,
+        "8000-new": 2,
+        "8000-cumulative": 465
+    },
+    {
+        "day": "April 12",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 411,
+        "8000-new": 1,
+        "8000-cumulative": 686
+    },
+    {
+        "day": "April 12",
+        "year": 2018,
+        "6200-new": 3,
+        "6200-cumulative": 229,
+        "8000-new": 6,
+        "8000-cumulative": 395
+    },
+    {
+        "day": "April 13",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 413,
+        "8000-new": 6,
+        "8000-cumulative": 692
+    },
+    {
+        "day": "April 14",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 239,
+        "8000-new": 2,
+        "8000-cumulative": 467
+    },
+    {
+        "day": "April 14",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 417,
+        "8000-new": 8,
+        "8000-cumulative": 700
+    },
+    {
+        "day": "April 15",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 240,
+        "8000-new": 2,
+        "8000-cumulative": 469
+    },
+    {
+        "day": "April 16",
+        "year": 2018,
+        "6200-new": 5,
+        "6200-cumulative": 234,
+        "8000-new": 8,
+        "8000-cumulative": 403
+    },
+    {
+        "day": "April 17",
+        "year": 2018,
+        "6200-new": 5,
+        "6200-cumulative": 239,
+        "8000-new": 6,
+        "8000-cumulative": 409
+    },
+    {
+        "day": "April 18",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 417,
+        "8000-new": 5,
+        "8000-cumulative": 705
+    },
+    {
+        "day": "April 22",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 87.5,
+        "8000-new": 1,
+        "8000-cumulative": 269.5
+    },
+    {
+        "day": "April 23",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 87.5,
+        "8000-new": 6,
+        "8000-cumulative": 275.5
+    },
+    {
+        "day": "April 23",
+        "year": 2016,
+        "6200-new": 14,
+        "6200-cumulative": 254,
+        "8000-new": 18,
+        "8000-cumulative": 487
+    },
+    {
+        "day": "April 24",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 79,
+        "8000-new": 3,
+        "8000-cumulative": 204
+    },
+    {
+        "day": "April 24",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 417,
+        "8000-new": 5,
+        "8000-cumulative": 710
+    },
+    {
+        "day": "April 25",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 89.5,
+        "8000-new": 7,
+        "8000-cumulative": 282.5
+    },
+    {
+        "day": "April 25",
+        "year": 2015,
+        "6200-new": 9,
+        "6200-cumulative": 88,
+        "8000-new": 12,
+        "8000-cumulative": 216
+    },
+    {
+        "day": "April 25",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 418,
+        "8000-new": 4,
+        "8000-cumulative": 714
+    },
+    {
+        "day": "April 26",
+        "year": 2014,
+        "6200-new": 8,
+        "6200-cumulative": 97.5,
+        "8000-new": 18,
+        "8000-cumulative": 300.5
+    },
+    {
+        "day": "April 30",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 255,
+        "8000-new": 1,
+        "8000-cumulative": 488
+    },
+    {
+        "day": "April 30",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 239,
+        "8000-new": 1,
+        "8000-cumulative": 410
+    },
+    {
+        "day": "May 6",
+        "year": 2016,
+        "6200-new": 0,
+        "6200-cumulative": 255,
+        "8000-new": 3,
+        "8000-cumulative": 491
+    },
+    {
+        "day": "May 7",
+        "year": 2015,
+        "6200-new": 5,
+        "6200-cumulative": 93,
+        "8000-new": 7,
+        "8000-cumulative": 223
+    },
+    {
+        "day": "May 7",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 420,
+        "8000-new": 7,
+        "8000-cumulative": 721
+    },
+    {
+        "day": "May 17",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 420,
+        "8000-new": 3,
+        "8000-cumulative": 724
+    },
+    {
+        "day": "May 17",
+        "year": 2018,
+        "6200-new": 0,
+        "6200-cumulative": 239,
+        "8000-new": 1,
+        "8000-cumulative": 411
+    },
+    {
+        "day": "May 21",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 256,
+        "8000-new": 4,
+        "8000-cumulative": 495
+    },
+    {
+        "day": "June 12",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 422,
+        "8000-new": 4,
+        "8000-cumulative": 728
+    },
+    {
+        "day": "September 21",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 1,
+        "8000-new": 3,
+        "8000-cumulative": 3
+    },
+    {
+        "day": "September 22",
+        "year": 2013,
+        "6200-new": 1,
+        "6200-cumulative": 1,
+        "8000-new": 4,
+        "8000-cumulative": 4
+    },
+    {
+        "day": "September 22",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 2,
+        "8000-new": 1,
+        "8000-cumulative": 4
+    },
+    {
+        "day": "September 27",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 0,
+        "8000-new": 4,
+        "8000-cumulative": 4
+    },
+    {
+        "day": "October 3",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 1,
+        "8000-new": 3,
+        "8000-cumulative": 3
+    },
+    {
+        "day": "October 8",
+        "year": 2013,
+        "6200-new": 0,
+        "6200-cumulative": 1,
+        "8000-new": 1,
+        "8000-cumulative": 5
+    },
+    {
+        "day": "October 20",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 3,
+        "8000-new": 3,
+        "8000-cumulative": 7
+    },
+    {
+        "day": "October 28",
+        "year": 2013,
+        "6200-new": 5,
+        "6200-cumulative": 6,
+        "8000-new": 10,
+        "8000-cumulative": 15
+    },
+    {
+        "day": "October 29",
+        "year": 2013,
+        "6200-new": 2,
+        "6200-cumulative": 8,
+        "8000-new": 8,
+        "8000-cumulative": "23:"
+    },
+    {
+        "day": "October 31",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 2,
+        "8000-new": 7,
+        "8000-cumulative": 10
+    },
+    {
+        "day": "November 1",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 0,
+        "8000-new": 6,
+        "8000-cumulative": 10
+    },
+    {
+        "day": "November 1",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 3,
+        "8000-new": 4,
+        "8000-cumulative": 14
+    },
+    {
+        "day": "November 2",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 2,
+        "8000-new": 3,
+        "8000-cumulative": 13
+    },
+    {
+        "day": "November 3",
+        "year": 2015,
+        "6200-new": 5,
+        "6200-cumulative": 5,
+        "8000-new": 13,
+        "8000-cumulative": 13
+    },
+    {
+        "day": "November 3",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 2,
+        "8000-cumulative": 9
+    },
+    {
+        "day": "November 4",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 3,
+        "8000-cumulative": 12
+    },
+    {
+        "day": "November 5",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 7,
+        "8000-cumulative": 19
+    },
+    {
+        "day": "November 9",
+        "year": 2015,
+        "6200-new": 3,
+        "6200-cumulative": 8,
+        "8000-new": 6,
+        "8000-cumulative": 19
+    },
+    {
+        "day": "November 9",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 2,
+        "8000-cumulative": 21
+    },
+    {
+        "day": "November 10",
+        "year": 2015,
+        "6200-new": 5,
+        "6200-cumulative": 13,
+        "8000-new": 9,
+        "8000-cumulative": 28
+    },
+    {
+        "day": "November 10",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 1,
+        "8000-cumulative": 22
+    },
+    {
+        "day": "November 14",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 5,
+        "8000-cumulative": 27
+    },
+    {
+        "day": "November 15",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 2,
+        "8000-cumulative": 29
+    },
+    {
+        "day": "November 16",
+        "year": 2015,
+        "6200-new": 6,
+        "6200-cumulative": 19,
+        "8000-new": 11,
+        "8000-cumulative": 39
+    },
+    {
+        "day": "November 16",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 3,
+        "8000-new": 12,
+        "8000-cumulative": 41
+    },
+    {
+        "day": "November 17",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 5,
+        "8000-new": 4,
+        "8000-cumulative": 18
+    },
+    {
+        "day": "November 17",
+        "year": 2017,
+        "6200-new": 1,
+        "6200-cumulative": 4,
+        "8000-new": 7,
+        "8000-cumulative": 48
+    },
+    {
+        "day": "November 18",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 4,
+        "8000-new": 2,
+        "8000-cumulative": 50
+    },
+    {
+        "day": "November 19",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 7,
+        "8000-new": 4,
+        "8000-cumulative": 22
+    },
+    {
+        "day": "November 20",
+        "year": 2013,
+        "6200-new": 0,
+        "6200-cumulative": 8,
+        "8000-new": 4,
+        "8000-cumulative": 27
+    },
+    {
+        "day": "November 20",
+        "year": 2016,
+        "6200-new": 4,
+        "6200-cumulative": 11,
+        "8000-new": 6,
+        "8000-cumulative": 28
+    },
+    {
+        "day": "November 21",
+        "year": 2013,
+        "6200-new": 1,
+        "6200-cumulative": 9,
+        "8000-new": 6,
+        "8000-cumulative": 33
+    },
+    {
+        "day": "November 21",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 2,
+        "8000-new": 5,
+        "8000-cumulative": 18
+    },
+    {
+        "day": "November 21",
+        "year": 2016,
+        "6200-new": 3,
+        "6200-cumulative": 14,
+        "8000-new": 4,
+        "8000-cumulative": 32
+    },
+    {
+        "day": "November 23",
+        "year": 2016,
+        "6200-new": 5,
+        "6200-cumulative": 19,
+        "8000-new": 6,
+        "8000-cumulative": 38
+    },
+    {
+        "day": "November 24",
+        "year": 2016,
+        "6200-new": 2,
+        "6200-cumulative": 21,
+        "8000-new": 4,
+        "8000-cumulative": 42
+    },
+    {
+        "day": "November 25",
+        "year": 2015,
+        "6200-new": 9,
+        "6200-cumulative": 28,
+        "8000-new": 10,
+        "8000-cumulative": 49
+    },
+    {
+        "day": "November 26",
+        "year": 2015,
+        "6200-new": 4,
+        "6200-cumulative": 32,
+        "8000-new": 7,
+        "8000-cumulative": 56
+    },
+    {
+        "day": "November 27",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 33,
+        "8000-new": 1,
+        "8000-cumulative": 57
+    },
+    {
+        "day": "November 27",
+        "year": 2016,
+        "6200-new": 13,
+        "6200-cumulative": 34,
+        "8000-new": 15,
+        "8000-cumulative": 57
+    },
+    {
+        "day": "November 27",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 6,
+        "8000-new": 7,
+        "8000-cumulative": 57
+    },
+    {
+        "day": "November 27",
+        "year": 2019,
+        "6200-new": 12,
+        "6200-cumulative": 12,
+        "8000-new": 18,
+        "8000-cumulative": 18
+    },
+    {
+        "day": "November 28",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 35,
+        "8000-new": 4,
+        "8000-cumulative": 61
+    },
+    {
+        "day": "November 28",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 6,
+        "8000-new": 2,
+        "8000-cumulative": 59
+    },
+    {
+        "day": "November 28",
+        "year": 2019,
+        "6200-new": 6,
+        "6200-cumulative": 18,
+        "8000-new": 7,
+        "8000-cumulative": 25
+    },
+    {
+        "day": "November 29",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 4,
+        "8000-new": 3,
+        "8000-cumulative": 21
+    },
+    {
+        "day": "November 29",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 36,
+        "8000-new": 1,
+        "8000-cumulative": 65
+    },
+    {
+        "day": "November 29",
+        "year": 2019,
+        "6200-new": 6,
+        "6200-cumulative": 24,
+        "8000-new": 6,
+        "8000-cumulative": 31
+    },
+    {
+        "day": "November 30",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 6,
+        "8000-new": 5,
+        "8000-cumulative": 26
+    },
+    {
+        "day": "November 30",
+        "year": 2019,
+        "6200-new": 6,
+        "6200-cumulative": 30,
+        "8000-new": 7,
+        "8000-cumulative": 38
+    },
+    {
+        "day": "December 1",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 7,
+        "8000-new": 5,
+        "8000-cumulative": 31
+    },
+    {
+        "day": "December 1",
+        "year": 2019,
+        "6200-new": 2,
+        "6200-cumulative": 32,
+        "8000-new": 9,
+        "8000-cumulative": 47
+    },
+    {
+        "day": "December 2",
+        "year": 2019,
+        "6200-new": 6,
+        "6200-cumulative": 38,
+        "8000-new": 28,
+        "8000-cumulative": 75
+    },
+    {
+        "day": "December 3",
+        "year": 2013,
+        "6200-new": 0,
+        "6200-cumulative": 8,
+        "8000-new": 4,
+        "8000-cumulative": 37
+    },
+    {
+        "day": "December 3",
+        "year": 2014,
+        "6200-new": 3,
+        "6200-cumulative": 10,
+        "8000-new": 10,
+        "8000-cumulative": 41
+    },
+    {
+        "day": "December 3",
+        "year": 2017,
+        "6200-new": 2,
+        "6200-cumulative": 8,
+        "8000-new": 4,
+        "8000-cumulative": 63
+    },
+    {
+        "day": "December 3",
+        "year": 2019,
+        "6200-new": 0,
+        "6200-cumulative": 38,
+        "8000-new": 5,
+        "8000-cumulative": 80
+    },
+    {
+        "day": "December 4",
+        "year": 2013,
+        "6200-new": 2,
+        "6200-cumulative": 11,
+        "8000-new": 3,
+        "8000-cumulative": 40
+    },
+    {
+        "day": "December 4",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 10,
+        "8000-new": 10,
+        "8000-cumulative": 51
+    },
+    {
+        "day": "December 4",
+        "year": 2015,
+        "6200-new": 8,
+        "6200-cumulative": 41,
+        "8000-new": 9,
+        "8000-cumulative": 66
+    },
+    {
+        "day": "December 4",
+        "year": 2017,
+        "6200-new": 0,
+        "6200-cumulative": 8,
+        "8000-new": 1,
+        "8000-cumulative": 64
+    },
+    {
+        "day": "December 5",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 10,
+        "8000-new": 4,
+        "8000-cumulative": 55
+    },
+    {
+        "day": "December 5",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 41,
+        "8000-new": 1,
+        "8000-cumulative": 67
+    },
+    {
+        "day": "December 5",
+        "year": 2019,
+        "6200-new": 1,
+        "6200-cumulative": 39,
+        "8000-new": 4,
+        "8000-cumulative": 84
+    },
+    {
+        "day": "December 6",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 10,
+        "8000-new": 1,
+        "8000-cumulative": 56
+    },
+    {
+        "day": "December 7",
+        "year": 2013,
+        "6200-new": 15,
+        "6200-cumulative": 26,
+        "8000-new": 10,
+        "8000-cumulative": 50
+    },
+    {
+        "day": "December 7",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 41,
+        "8000-new": 1,
+        "8000-cumulative": 68
+    },
+    {
+        "day": "December 8",
+        "year": 2013,
+        "6200-new": 5,
+        "6200-cumulative": 31,
+        "8000-new": 7,
+        "8000-cumulative": 57
+    },
+    {
+        "day": "December 8",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 37,
+        "8000-new": 3,
+        "8000-cumulative": 66
+    },
+    {
+        "day": "December 10",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 41,
+        "8000-new": 1,
+        "8000-cumulative": 69
+    },
+    {
+        "day": "December 11",
+        "year": 2015,
+        "6200-new": 13,
+        "6200-cumulative": 54,
+        "8000-new": 17,
+        "8000-cumulative": 86
+    },
+    {
+        "day": "December 11",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 38,
+        "8000-new": 3,
+        "8000-cumulative": 69
+    },
+    {
+        "day": "December 12",
+        "year": 2014,
+        "6200-new": 2,
+        "6200-cumulative": 12,
+        "8000-new": 16,
+        "8000-cumulative": 72
+    },
+    {
+        "day": "December 12",
+        "year": 2015,
+        "6200-new": 6,
+        "6200-cumulative": 60,
+        "8000-new": 6,
+        "8000-cumulative": 92
+    },
+    {
+        "day": "December 13",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 13,
+        "8000-new": 3,
+        "8000-cumulative": 75
+    },
+    {
+        "day": "December 13",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 61,
+        "8000-new": 2,
+        "8000-cumulative": 94
+    },
+    {
+        "day": "December 14",
+        "year": 2015,
+        "6200-new": 14,
+        "6200-cumulative": 75,
+        "8000-new": 16,
+        "8000-cumulative": 110
+    },
+    {
+        "day": "December 16",
+        "year": 2014,
+        "6200-new": 7,
+        "6200-cumulative": 20,
+        "8000-new": 10,
+        "8000-cumulative": 85
+    },
+    {
+        "day": "December 16",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 39,
+        "8000-new": 6,
+        "8000-cumulative": 75
+    },
+    {
+        "day": "December 17",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 21,
+        "8000-new": 3,
+        "8000-cumulative": 88
+    },
+    {
+        "day": "December 17",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 40,
+        "8000-new": 3,
+        "8000-cumulative": 78
+    },
+    {
+        "day": "December 18",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 22,
+        "8000-new": 3,
+        "8000-cumulative": 91
+    },
+    {
+        "day": "December 19",
+        "year": 2013,
+        "6200-new": 1,
+        "6200-cumulative": 32,
+        "8000-new": 1,
+        "8000-cumulative": 58
+    },
+    {
+        "day": "December 19",
+        "year": 2015,
+        "6200-new": 2,
+        "6200-cumulative": 77,
+        "8000-new": 3,
+        "8000-cumulative": 113
+    },
+    {
+        "day": "December 20",
+        "year": 2013,
+        "6200-new": 0,
+        "6200-cumulative": 32,
+        "8000-new": 1,
+        "8000-cumulative": 59
+    },
+    {
+        "day": "December 20",
+        "year": 2014,
+        "6200-new": 8,
+        "6200-cumulative": 30,
+        "8000-new": 10,
+        "8000-cumulative": 101
+    },
+    {
+        "day": "December 20",
+        "year": 2015,
+        "6200-new": 4,
+        "6200-cumulative": 81,
+        "8000-new": 5,
+        "8000-cumulative": 118
+    },
+    {
+        "day": "December 20",
+        "year": 2017,
+        "6200-new": 4,
+        "6200-cumulative": 12,
+        "8000-new": 5,
+        "8000-cumulative": 69
+    },
+    {
+        "day": "December 21",
+        "year": 2014,
+        "6200-new": 0,
+        "6200-cumulative": 30,
+        "8000-new": 2,
+        "8000-cumulative": 103
+    },
+    {
+        "day": "December 21",
+        "year": 2015,
+        "6200-new": 4,
+        "6200-cumulative": 85,
+        "8000-new": 5,
+        "8000-cumulative": 123
+    },
+    {
+        "day": "December 22",
+        "year": 2015,
+        "6200-new": 4,
+        "6200-cumulative": 89,
+        "8000-new": 36,
+        "8000-cumulative": 159
+    },
+    {
+        "day": "December 22",
+        "year": 2016,
+        "6200-new": 1,
+        "6200-cumulative": 41,
+        "8000-new": 1,
+        "8000-cumulative": 79
+    },
+    {
+        "day": "December 23",
+        "year": 2015,
+        "6200-new": 0,
+        "6200-cumulative": 89,
+        "8000-new": 6,
+        "8000-cumulative": 165
+    },
+    {
+        "day": "December 24",
+        "year": 2016,
+        "6200-new": 10,
+        "6200-cumulative": 51,
+        "8000-new": 14,
+        "8000-cumulative": 93
+    },
+    {
+        "day": "December 25",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 31,
+        "8000-new": 5,
+        "8000-cumulative": 108
+    },
+    {
+        "day": "December 25",
+        "year": 2015,
+        "6200-new": 14,
+        "6200-cumulative": 103,
+        "8000-new": 18,
+        "8000-cumulative": 183
+    },
+    {
+        "day": "December 25",
+        "year": 2016,
+        "6200-new": 6,
+        "6200-cumulative": 57,
+        "8000-new": 8,
+        "8000-cumulative": 101
+    },
+    {
+        "day": "December 26",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 104,
+        "8000-new": 2,
+        "8000-cumulative": 185
+    },
+    {
+        "day": "December 29",
+        "year": 2015,
+        "6200-new": 1,
+        "6200-cumulative": 105,
+        "8000-new": 2,
+        "8000-cumulative": 187
+    },
+    {
+        "day": "December 30",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 32,
+        "8000-new": 1,
+        "8000-cumulative": 109
+    },
+    {
+        "day": "December 31",
+        "year": 2014,
+        "6200-new": 1,
+        "6200-cumulative": 33,
+        "8000-new": 1,
+        "8000-cumulative": 110
+    }
+]

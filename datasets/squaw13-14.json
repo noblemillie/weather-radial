@@ -1,0 +1,317 @@
+[
+	{
+		"date": "Saturday, April 26, 2014",
+		"6200-new": 8,
+		"6200-cumulative": 97.5,
+		"8000-new": 18,
+		"8000-cumulative": 300.5
+	},
+	{
+		"date": "Friday, April 25, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 89.5,
+		"8000-new": 7,
+		"8000-cumulative": 282.5
+	},
+	{
+		"date": "Wednesday, April 23, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 87.5,
+		"8000-new": 6,
+		"8000-cumulative": 275.5
+	},
+	{
+		"date": "Tuesday, April 22, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 87.5,
+		"8000-new": 1,
+		"8000-cumulative": 269.5
+	},
+	{
+		"date": "Saturday, April 5, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 87.5,
+		"8000-new": 1,
+		"8000-cumulative": 268.5
+	},
+	{
+		"date": "Wednesday, April 2, 2014",
+		"6200-new": 4,
+		"6200-cumulative": 87.5,
+		"8000-new": 5,
+		"8000-cumulative": 267.5
+	},
+	{
+		"date": "Tuesday, April 1, 2014",
+		"6200-new": 3,
+		"6200-cumulative": 83.5,
+		"8000-new": 16,
+		"8000-cumulative": 262.5
+	},
+	{
+		"date": "Monday, March 31, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 80.5,
+		"8000-new": 2,
+		"8000-cumulative": 246.5
+	},
+	{
+		"date": "Sunday, March 30, 2014",
+		"6200-new": 10,
+		"6200-cumulative": 80.5,
+		"8000-new": 20,
+		"8000-cumulative": 244.5
+	},
+	{
+		"date": "Saturday, March 29, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 70.5,
+		"8000-new": 4,
+		"8000-cumulative": 224.5
+	},
+	{
+		"date": "Thursday, March 27, 2014",
+		"6200-new": 6,
+		"6200-cumulative": 70.5,
+		"8000-new": 13,
+		"8000-cumulative": 220.5
+	},
+	{
+		"date": "Wednesday, March 26, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 64.5,
+		"8000-new": 6,
+		"8000-cumulative": 207.5
+	},
+	{
+		"date": "Tuesday, March 11, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 62.5,
+		"8000-new": 4,
+		"8000-cumulative": 201.5
+	},
+	{
+		"date": "Friday, March 7, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 62.5,
+		"8000-new": 1.5,
+		"8000-cumulative": 197.5
+	},
+	{
+		"date": "Thursday, March 6, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 62.5,
+		"8000-new": 2,
+		"8000-cumulative": 196
+	},
+	{
+		"date": "Tuesday, March 4, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 62.5,
+		"8000-new": 8,
+		"8000-cumulative": 194
+	},
+	{
+		"date": "Monday, March 3, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 60.5,
+		"8000-new": 4,
+		"8000-cumulative": 186
+	},
+	{
+		"date": "Sunday, March 2, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 60.5,
+		"8000-new": 3,
+		"8000-cumulative": 182
+	},
+	{
+		"date": "Saturday, March 1, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 60.5,
+		"8000-new": 8,
+		"8000-cumulative": 179
+	},
+	{
+		"date": "Friday, February 28, 2014",
+		"6200-new": 4,
+		"6200-cumulative": 58.5,
+		"8000-new": 12,
+		"8000-cumulative": 171
+	},
+	{
+		"date": "Thursday, February 27, 2014",
+		"6200-new": 4,
+		"6200-cumulative": 54.5,
+		"8000-new": 10,
+		"8000-cumulative": 159
+	},
+	{
+		"date": "Thursday, February 20, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 50.5,
+		"8000-new": 1,
+		"8000-cumulative": 149
+	},
+	{
+		"date": "Wednesday, February 19, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 50.5,
+		"8000-new": 1,
+		"8000-cumulative": 148
+	},
+	{
+		"date": "Sunday, February 16, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 50.5,
+		"8000-new": 3,
+		"8000-cumulative": 147
+	},
+	{
+		"date": "Monday, February 10, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 49.5,
+		"8000-new": 8,
+		"8000-cumulative": 144
+	},
+	{
+		"date": "Sunday, February 9, 2014",
+		"6200-new": 0.5,
+		"6200-cumulative": 48.5,
+		"8000-new": 38,
+		"8000-cumulative": 136
+	},
+	{
+		"date": "Saturday, February 8, 2014",
+		"6200-new": 5,
+		"6200-cumulative": 48,
+		"8000-new": 16,
+		"8000-cumulative": 98
+	},
+	{
+		"date": "Friday, February 7, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 43,
+		"8000-new": 4,
+		"8000-cumulative": 82
+	},
+	{
+		"date": "Thursday, February 6, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 41,
+		"8000-new": 2,
+		"8000-cumulative": 78
+	},
+	{
+		"date": "Monday, February 3, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 40,
+		"8000-new": 4,
+		"8000-cumulative": 76
+	},
+	{
+		"date": "Friday, January 31, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 38,
+		"8000-new": 4,
+		"8000-cumulative": 72
+	},
+	{
+		"date": "Thursday, January 30, 2014",
+		"6200-new": 3,
+		"6200-cumulative": 36,
+		"8000-new": 6,
+		"8000-cumulative": 68
+	},
+	{
+		"date": "Sunday, January 12, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 33,
+		"8000-new": 3,
+		"8000-cumulative": 62
+	},
+	{
+		"date": "Friday, December 20, 2013",
+		"6200-new": 0,
+		"6200-cumulative": 32,
+		"8000-new": 1,
+		"8000-cumulative": 59
+	},
+	{
+		"date": "Thursday, December 19, 2013",
+		"6200-new": 1,
+		"6200-cumulative": 32,
+		"8000-new": 1,
+		"8000-cumulative": 58
+	},
+	{
+		"date": "Sunday, December 8, 2013",
+		"6200-new": 5,
+		"6200-cumulative": 31,
+		"8000-new": 7,
+		"8000-cumulative": 57
+	},
+	{
+		"date": "Saturday, December 7, 2013",
+		"6200-new": 15,
+		"6200-cumulative": 26,
+		"8000-new": 10,
+		"8000-cumulative": 50
+	},
+	{
+		"date": "Wednesday, December 4, 2013",
+		"6200-new": 2,
+		"6200-cumulative": 11,
+		"8000-new": 3,
+		"8000-cumulative": 40
+	},
+	{
+		"date": "Tuesday, December 3, 2013",
+		"6200-new": 0,
+		"6200-cumulative": 8,
+		"8000-new": 4,
+		"8000-cumulative": 37
+	},
+	{
+		"date": "Thursday, November 21, 2013",
+		"6200-new": 1,
+		"6200-cumulative": 9,
+		"8000-new": 6,
+		"8000-cumulative": 33
+	},
+	{
+		"date": "Wednesday, November 20, 2013",
+		"6200-new": 0,
+		"6200-cumulative": 8,
+		"8000-new": 4,
+		"8000-cumulative": 27
+	},
+	{
+		"date": "Tuesday, October 29, 2013",
+		"6200-new": 2,
+		"6200-cumulative": 8,
+		"8000-new": 8,
+		"8000-cumulative": 23
+	},
+	{
+		"date": "Monday, October 28, 2013",
+		"6200-new": 5,
+		"6200-cumulative": 6,
+		"8000-new": 10,
+		"8000-cumulative": 15
+	},
+	{
+		"date": "Tuesday, October 8, 2013",
+		"6200-new": 0,
+		"6200-cumulative": 1,
+		"8000-new": 1,
+		"8000-cumulative": 5
+	},
+	{
+		"date": "Sunday, September 22, 2013",
+		"6200-new": 1,
+		"6200-cumulative": 1,
+		"8000-new": 4,
+		"8000-cumulative": 4
+	}
+]

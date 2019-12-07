@@ -17,7 +17,7 @@ var svg = d3
 	// .style('background-color', 'snow')
 	.style('background-color', 'rgba(11, 11, 11, 0.8)')
 	// .style('background-color', 'rgba(240, 240, 240, 0.1)')
-	.style('border', '1px solid blue')
+	.style('border', '3px solid blue')
 	.append('g')
 	.attr(
 		'transform',
@@ -195,7 +195,18 @@ barWrapper
 	.attr('x', 7)
 	.attr('y', -outerRadius * 1.1)
 	.attr('dy', '2em')
+	.attr('transform', 'translate(-30, -5) rotate(15)')
 	.text('January');
+
+//Add January for reference
+barWrapper
+	.append('text')
+	.attr('class', 'february')
+	.attr('x', 7)
+	.attr('y', -outerRadius * 1.1)
+	.attr('dy', '2em')
+	.attr('transform', 'translate(-5, 0) rotate(45)')
+	.text('February');
 
 //Add December for reference
 barWrapper
@@ -204,6 +215,7 @@ barWrapper
 	.attr('x', -75)
 	.attr('y', -outerRadius * 1.1)
 	.attr('dy', '2em')
+	.attr('transform', 'translate(40, -10) rotate(-15)')
 	.text('December');
 //Add a line to split the year
 barWrapper
@@ -267,20 +279,20 @@ barWrapper
 	.style('stroke-width', 9.5)
 	.attr('class', 'seasonLine')
 	.attr('x1', 0)
-	.attr('y1', -innerRadius * 0.05)
-	.attr('y2', -245)
+	.attr('y1', -innerRadius * 0.01)
+	.attr('y2', -295)
 	.attr('x2', -outerRadius * 0.7)
-	.style('opacity', 0.98);
+	.style('opacity', 0.78);
 
 barWrapper
 	.append('line')
-	.style('stroke-width', 8.5)
+	.style('stroke-width', 9.5)
 	.attr('class', 'seasonLine')
 	.attr('x1', 0)
-	.attr('x2', -outerRadius * -1.1)
-	.attr('y1', -innerRadius * 0.05)
-	.attr('y2', 120)
-	.style('opacity', 0.8);
+	.attr('x2', -outerRadius * -1.2)
+	.attr('y1', -innerRadius * 0.01)
+	.attr('y2', 100)
+	.style('opacity', 0.3);
 
 ////////////////////////////// Draw bars //////////////////////////////////
 // tempBar height is the difference between the minimum and maximum temperature

@@ -1,0 +1,275 @@
+[
+	{
+		"date": "Thursday, May 7, 2015",
+		"6200-new": 5,
+		"6200-cumulative": 93,
+		"8000-new": 7,
+		"8000-cumulative": 223
+	},
+	{
+		"date": "Saturday, April 25, 2015",
+		"6200-new": 9,
+		"6200-cumulative": 88,
+		"8000-new": 12,
+		"8000-cumulative": 216
+	},
+	{
+		"date": "Friday, April 24, 2015",
+		"6200-new": 0,
+		"6200-cumulative": 79,
+		"8000-new": 3,
+		"8000-cumulative": 204
+	},
+	{
+		"date": "Wednesday, April 8, 2015",
+		"6200-new": 6,
+		"6200-cumulative": 79,
+		"8000-new": 12,
+		"8000-cumulative": 201
+	},
+	{
+		"date": "Monday, April 6, 2015",
+		"6200-new": 4,
+		"6200-cumulative": 73,
+		"8000-new": 8,
+		"8000-cumulative": 189
+	},
+	{
+		"date": "Tuesday, March 24, 2015",
+		"6200-new": 1,
+		"6200-cumulative": 69,
+		"8000-new": 3,
+		"8000-cumulative": 181
+	},
+	{
+		"date": "Monday, March 23, 2015",
+		"6200-new": 1,
+		"6200-cumulative": 68,
+		"8000-new": 4,
+		"8000-cumulative": 178
+	},
+	{
+		"date": "Thursday, March 12, 2015",
+		"6200-new": 0,
+		"6200-cumulative": 67,
+		"8000-new": 1,
+		"8000-cumulative": 174
+	},
+	{
+		"date": "Tuesday, March 3, 2015",
+		"6200-new": 1,
+		"6200-cumulative": 67,
+		"8000-new": 1,
+		"8000-cumulative": 173
+	},
+	{
+		"date": "Sunday, March 1, 2015",
+		"6200-new": 11,
+		"6200-cumulative": 66,
+		"8000-new": 15,
+		"8000-cumulative": 172
+	},
+	{
+		"date": "Saturday, February 28, 2015",
+		"6200-new": 12,
+		"6200-cumulative": 50,
+		"8000-new": 17,
+		"8000-cumulative": 157
+	},
+	{
+		"date": "Tuesday, February 10, 2015",
+		"6200-new": 1,
+		"6200-cumulative": 38,
+		"8000-new": 3,
+		"8000-cumulative": 140
+	},
+	{
+		"date": "Monday, February 9, 2015",
+		"6200-new": 1,
+		"6200-cumulative": 37,
+		"8000-new": 5,
+		"8000-cumulative": 137
+	},
+	{
+		"date": "Sunday, February 8, 2015",
+		"6200-new": 0,
+		"6200-cumulative": 36,
+		"8000-new": 3,
+		"8000-cumulative": 132
+	},
+	{
+		"date": "Saturday, February 7, 2015",
+		"6200-new": 3,
+		"6200-cumulative": 36,
+		"8000-new": 15,
+		"8000-cumulative": 129
+	},
+	{
+		"date": "Wednesday, January 28, 2015",
+		"6200-new": 0,
+		"6200-cumulative": 33,
+		"8000-new": 4,
+		"8000-cumulative": 114
+	},
+	{
+		"date": "Wednesday, December 31, 2014",
+		"6200-new": "",
+		"6200-cumulative": "",
+		"8000-new": "",
+		"8000-cumulative": ""
+	},
+	{
+		"date": 1,
+		"6200-new": "",
+		"6200-cumulative": "",
+		"8000-new": "",
+		"8000-cumulative": ""
+	},
+	{
+		"date": 33,
+		"6200-new": 1,
+		"6200-cumulative": 110,
+		"8000-new": "",
+		"8000-cumulative": ""
+	},
+	{
+		"date": "Tuesday, December 30, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 32,
+		"8000-new": 1,
+		"8000-cumulative": 109
+	},
+	{
+		"date": "Thurday, December 25, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 31,
+		"8000-new": 5,
+		"8000-cumulative": 108
+	},
+	{
+		"date": "Sunday, December 21, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 30,
+		"8000-new": 2,
+		"8000-cumulative": 103
+	},
+	{
+		"date": "Saturday, December 20, 2014",
+		"6200-new": 8,
+		"6200-cumulative": 30,
+		"8000-new": 10,
+		"8000-cumulative": 101
+	},
+	{
+		"date": "Thursday, December 18, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 22,
+		"8000-new": 3,
+		"8000-cumulative": 91
+	},
+	{
+		"date": "Wednesday, December 17, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 21,
+		"8000-new": 3,
+		"8000-cumulative": 88
+	},
+	{
+		"date": "Tuesday, December 16, 2014",
+		"6200-new": 7,
+		"6200-cumulative": 20,
+		"8000-new": 10,
+		"8000-cumulative": 85
+	},
+	{
+		"date": "Saturday, December 13, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 13,
+		"8000-new": 3,
+		"8000-cumulative": 75
+	},
+	{
+		"date": "Friday, December 12, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 12,
+		"8000-new": 16,
+		"8000-cumulative": 72
+	},
+	{
+		"date": "Saturday, December 6, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 10,
+		"8000-new": 1,
+		"8000-cumulative": 56
+	},
+	{
+		"date": "Friday, December 5, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 10,
+		"8000-new": 4,
+		"8000-cumulative": 55
+	},
+	{
+		"date": "Thursday, December 4, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 10,
+		"8000-new": 10,
+		"8000-cumulative": 51
+	},
+	{
+		"date": "Wednesday, December 3, 2014",
+		"6200-new": 3,
+		"6200-cumulative": 10,
+		"8000-new": 10,
+		"8000-cumulative": 41
+	},
+	{
+		"date": "Monday, December 1, 2014",
+		"6200-new": 1,
+		"6200-cumulative": 7,
+		"8000-new": 5,
+		"8000-cumulative": 31
+	},
+	{
+		"date": "Sunday, November 30, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 6,
+		"8000-new": 5,
+		"8000-cumulative": 26
+	},
+	{
+		"date": "Saturday, November 29, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 4,
+		"8000-new": 3,
+		"8000-cumulative": 21
+	},
+	{
+		"date": "Friday, November 21, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 2,
+		"8000-new": 5,
+		"8000-cumulative": 18
+	},
+	{
+		"date": "Sunday, November 2, 2014",
+		"6200-new": 2,
+		"6200-cumulative": 2,
+		"8000-new": 3,
+		"8000-cumulative": 13
+	},
+	{
+		"date": "Saturday, November 1, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 0,
+		"8000-new": 6,
+		"8000-cumulative": 10
+	},
+	{
+		"date": "Saturday, September 27, 2014",
+		"6200-new": 0,
+		"6200-cumulative": 0,
+		"8000-new": 4,
+		"8000-cumulative": 4
+	}
+]

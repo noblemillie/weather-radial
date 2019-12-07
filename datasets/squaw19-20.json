@@ -1,0 +1,58 @@
+[
+	{
+		"date": "Thursday, December 5, 2019",
+		"6200-new": 1,
+		"6200-cumulative": 39,
+		"8000-new": 4,
+		"8000-cumulative": 84
+	},
+	{
+		"date": "Tuesday, December 3, 2019",
+		"6200-new": 0,
+		"6200-cumulative": 38,
+		"8000-new": 5,
+		"8000-cumulative": 80
+	},
+	{
+		"date": "Monday, December 2, 2019",
+		"6200-new": 6,
+		"6200-cumulative": 38,
+		"8000-new": 28,
+		"8000-cumulative": 75
+	},
+	{
+		"date": "Sunday, December 1, 2019",
+		"6200-new": 2,
+		"6200-cumulative": 32,
+		"8000-new": 9,
+		"8000-cumulative": 47
+	},
+	{
+		"date": "Saturday, November 30, 2019",
+		"6200-new": 6,
+		"6200-cumulative": 30,
+		"8000-new": 7,
+		"8000-cumulative": 38
+	},
+	{
+		"date": "Friday, November 29, 2019",
+		"6200-new": 6,
+		"6200-cumulative": 24,
+		"8000-new": 6,
+		"8000-cumulative": 31
+	},
+	{
+		"date": "Thursday, November 28, 2019",
+		"6200-new": 6,
+		"6200-cumulative": 18,
+		"8000-new": 7,
+		"8000-cumulative": 25
+	},
+	{
+		"date": "Wednesday, November 27, 2019",
+		"6200-new": 12,
+		"6200-cumulative": 12,
+		"8000-new": 18,
+		"8000-cumulative": 18
+	}
+]

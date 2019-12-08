@@ -2,19 +2,18 @@ body {
 	font-size: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	fill: #8C8C8C;
+	fill: #8c8c8c;
 	text-align: center;
- 	background-color: #e4e4e4;
+	background-color: #e4e4e4;
 }
 
-
-.dropdown-content li>span {
-    clear: both;
-    color: rgba(0, 0, 0, 0.87);
+.dropdown-content li > span {
+	clear: both;
+	color: rgba(0, 0, 0, 0.87);
 }
 .title {
 	font-size: 28px;
-	fill: #4F4F4F;
+	fill: #4f4f4f;
 	font-weight: 300;
 	text-anchor: start;
 }
@@ -28,7 +27,7 @@ body {
 
 .credit {
 	font-size: 12px;
-	fill: #AAAAAA;
+	fill: #aaaaaa;
 	font-weight: 300;
 	text-anchor: start;
 }
@@ -42,28 +41,28 @@ body {
 
 .axis text {
 	font-size: 12px;
-	fill: #AAAAAA;
+	fill: #aaaaaa;
 	font-weight: 400;
 }
 
 .legendTitle {
 	font-size: 14px;
-	fill: #4F4F4F;
+	fill: #4f4f4f;
 	font-weight: 300;
 }
 .month {
 	font-size: 14px;
 	text-anchor: start;
 	font-weight: 300;
-	fill: #AAAAAA;
+	fill: #aaaaaa;
 }
 
 .yearLine {
-	stroke: #AAAAAA;
+	stroke: #aaaaaa;
 }
 
 .axisText {
-	fill: #C4C4C4;
+	fill: #c4c4c4;
 	font-size: 11px;
 	font-weight: 300;
 	text-anchor: middle;
@@ -72,23 +71,23 @@ body {
 
 .axisCircles {
 	fill: none;
-	stroke: #E8E8E8;
+	stroke: #e8e8e8;
 	stroke-width: 1px;
 }
 
 .precipitationCircle {
-	fill: #1959B3;
+	fill: #1959b3;
 	fill-opacity: 0.2;
 }
 
 .monthArc {
 	fill: white;
-	stroke: #E8E8E8;
+	stroke: #e8e8e8;
 	fill-opacity: 0.4;
 }
 
 .card.large {
-    height: 750px;
+	height: 750px;
 }
 
 .select-wrapper input.select-dropdown {
@@ -96,6 +95,7 @@ body {
 }
 
 .input-field {
+	border: 1px solid blue;
 	margin-top: 0rem;
 }
 

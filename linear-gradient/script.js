@@ -1,12 +1,12 @@
-//////////////////// Set up and initiate svg containers ////////////////
+//////////////////// Set up and initiate svg containers ///////////
 var margin = {
-	top: 100,
+	top: 50,
 	right: 20,
-	bottom: 180,
+	bottom: 80,
 	left: 20
 };
-var width = window.innerWidth - margin.left - margin.right - 10;
-var height = window.innerHeight - margin.top - margin.bottom - 10;
+var width = (window.innerWidth - margin.left - margin.right - 10) / 2;
+var height = window.innerHeight - margin.top - margin.bottom - 40;
 
 //SVG container
 var svg = d3
@@ -15,9 +15,8 @@ var svg = d3
 	.attr('width', width + margin.left + margin.right - 10)
 	.attr('height', height + margin.top + margin.bottom - 50)
 	// .style('background-color', 'snow')
-	.style('background-color', 'rgba(11, 11, 11, 0.8)')
-	// .style('background-color', 'rgba(240, 240, 240, 0.1)')
-	.style('border', '3px solid blue')
+	.style('background-color', 'rgba(11, 11, 11, 0.7)')
+	.style('border', '3px solid cyan')
 	.append('g')
 	.attr(
 		'transform',
@@ -30,27 +29,23 @@ var svg = d3
 
 //////////////////// Load weather data ///////////////////
 let squawData = [];
-// let squawData = d3.json('squaw.json', function(w) {
+
 d3.json('historical.json', function(w) {
 	var datesArr = [];
-	// let squawData = [];
-	// return w;
 	squawData = w.data.weather;
 
-	// console.log('historical-inner: ', squawData);
 	console.log('extract: ', w.data.weather);
 	var dates = squawData.forEach(function(d) {
-		// d.date = parseDate(d.date);
 		datesArr.push(parseDate(d.date).toDateString());
+		// d.date = parseDate(d.date);
 		// console.log(`date: `, d.date);
 	});
 	console.log(`dates: `, datesArr);
 
 	return squawData;
 });
-// console.log('historical-outer: ', dat);
 
-//////////////////////////// Create scales ////////////////////////////////
+//////////////////////////// Create scales /////////////////////////
 //Parses a string into a date
 var parseDate = d3.time.format('%Y-%m-%d').parse;
 
@@ -68,15 +63,7 @@ var outerRadius = Math.min(width, height, 450) / 2,
 var colorScale = d3.scale
 	.linear()
 	.domain([-15, -10, 0, 10, 15, 28])
-	.range([
-		'purple',
-		'dodgerblue',
-		'white',
-		// 'powderblue',
-		'lightgreen',
-		'#ffff8c',
-		'crimson'
-	])
+	.range(['purple', 'dodgerblue', 'white', 'lightgreen', '#ffff8c', 'crimson'])
 	.interpolate(d3.interpolateHcl);
 
 var snowfallColorScale = d3.scale
@@ -147,9 +134,10 @@ textWrapper
 textWrapper
 	.append('text')
 	.attr('class', 'credit')
-	.attr('x', 20)
-	.attr('y', outerRadius + 140)
-	.text('Inspired by weather-radials.com');
+	.attr('x', 250)
+	.attr('y', outerRadius + 170)
+	.attr('opacity', 0.2)
+	.text('* inspired by weather-radials.com');
 
 ///////////////////////////// Create Axes /////////////////////////////////
 //Wrapper for the bars and to position it downward
@@ -188,35 +176,6 @@ axes
 		return d + '°C';
 	});
 
-//Add January for reference
-barWrapper
-	.append('text')
-	.attr('class', 'january')
-	.attr('x', 7)
-	.attr('y', -outerRadius * 1.1)
-	.attr('dy', '2em')
-	.attr('transform', 'translate(-30, -5) rotate(15)')
-	.text('January');
-
-//Add January for reference
-barWrapper
-	.append('text')
-	.attr('class', 'february')
-	.attr('x', 7)
-	.attr('y', -outerRadius * 1.1)
-	.attr('dy', '2em')
-	.attr('transform', 'translate(-5, 0) rotate(45)')
-	.text('February');
-
-//Add December for reference
-barWrapper
-	.append('text')
-	.attr('class', 'december')
-	.attr('x', -75)
-	.attr('y', -outerRadius * 1.1)
-	.attr('dy', '2em')
-	.attr('transform', 'translate(40, -10) rotate(-15)')
-	.text('December');
 //Add a line to split the year
 barWrapper
 	.append('line')
@@ -226,6 +185,77 @@ barWrapper
 	.attr('y1', -innerRadius * 0.15)
 	.attr('x2', 0)
 	.attr('y2', -outerRadius * 1.1);
+
+//Add a line to split first and second quarters
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('y1', 0)
+	.attr('x1', innerRadius * 0.15)
+	.attr('y2', 0)
+	.attr('x2', outerRadius * 1.1);
+
+//Add a line to split second and third quarters
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('x1', 0)
+	.attr('y1', innerRadius * 0.15)
+	.attr('x2', 0)
+	.attr('y2', outerRadius * 1.1);
+
+//Add a line to split third and  year fourth quarters
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('y1', 0)
+	.attr('x1', -innerRadius * 0.15)
+	.attr('y2', 0)
+	.attr('x2', -outerRadius * 1.1);
+
+//Add December label for reference
+barWrapper
+	.append('text')
+	.attr('class', 'december')
+	.attr('x', -75)
+	.attr('y', -outerRadius * 1.1)
+	.attr('dy', '2em')
+	.attr('transform', 'translate(40, -10) rotate(-15)')
+	.text('December');
+
+//Add January label for reference
+barWrapper
+	.append('text')
+	.attr('class', 'january')
+	.attr('x', 7)
+	.attr('y', -outerRadius * 1.1)
+	.attr('dy', '2em')
+	.attr('transform', 'translate(-30, -5) rotate(15)')
+	.text('January');
+
+//Add a line to split Feb/Mar
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('x1', 0)
+	.attr('y1', -innerRadius * 0.1)
+	.attr('x2', -210)
+	.attr('y2', -outerRadius * 0.5);
+
+//Add a line to split Nov/Dec
+barWrapper
+	.append('line')
+	.style('stroke-width', 0.5)
+	.attr('class', 'yearLine')
+	.attr('x1', 0)
+	.attr('y1', -innerRadius * -0.15)
+	.attr('x2', -120)
+	.attr('y2', -outerRadius * 0.9);
+
 //Add a line to split Jan/Feb
 barWrapper
 	.append('line')
@@ -235,6 +265,16 @@ barWrapper
 	.attr('y1', -innerRadius * 0.15)
 	.attr('x2', 120)
 	.attr('y2', -outerRadius * 0.9);
+
+//Add February label for reference
+barWrapper
+	.append('text')
+	.attr('class', 'february')
+	.attr('x', 7)
+	.attr('y', -outerRadius * 1.1)
+	.attr('dy', '2em')
+	.attr('transform', 'translate(-5, 0) rotate(45)')
+	.text('February');
 
 //Add a line to split Feb/Mar
 barWrapper
@@ -246,75 +286,65 @@ barWrapper
 	.attr('x2', 210)
 	.attr('y2', -outerRadius * 0.5);
 
-//Add a line to split the year
+// Add line to indicate start of ski-season
 barWrapper
 	.append('line')
-	.style('stroke-width', 0.5)
-	.attr('class', 'yearLine')
-	.attr('y1', 0)
-	.attr('x1', -innerRadius * 0.15)
-	.attr('y2', 0)
-	.attr('x2', -outerRadius * 1.1);
-//Add a line to split the year
-barWrapper
-	.append('line')
-	.style('stroke-width', 0.5)
-	.attr('class', 'yearLine')
-	.attr('y1', 0)
-	.attr('x1', innerRadius * 0.15)
-	.attr('y2', 0)
-	.attr('x2', outerRadius * 1.1);
-//Add a line to split the year
-barWrapper
-	.append('line')
-	.style('stroke-width', 0.5)
-	.attr('class', 'yearLine')
-	.attr('x1', 0)
-	.attr('y1', innerRadius * 0.15)
-	.attr('x2', 0)
-	.attr('y2', outerRadius * 1.1);
-
-barWrapper
-	.append('line')
-	.style('stroke-width', 9.5)
+	.style('stroke-width', 17.5)
 	.attr('class', 'seasonLine')
 	.attr('x1', 0)
-	.attr('y1', -innerRadius * 0.01)
-	.attr('y2', -295)
-	.attr('x2', -outerRadius * 0.7)
-	.style('opacity', 0.78);
+	.attr('y1', -innerRadius * -0.01)
+	.attr('y2', -180)
+	.attr('x2', -outerRadius * 0.75)
+	.style('opacity', 0.8);
 
+// Add line to indicate end of ski-season
 barWrapper
 	.append('line')
-	.style('stroke-width', 9.5)
+	.style('stroke-width', 17.5)
 	.attr('class', 'seasonLine')
 	.attr('x1', 0)
-	.attr('x2', -outerRadius * -1.2)
-	.attr('y1', -innerRadius * 0.01)
+	.attr('x2', -outerRadius * -1.0)
+	.attr('y1', -innerRadius * -0.01)
 	.attr('y2', 100)
-	.style('opacity', 0.3);
+	.style('opacity', 0.8);
 
 ////////////////////////////// Draw bars //////////////////////////////////
-// tempBar height is the difference between the minimum and maximum temperature
-// tempBar color is based on the mean temperature
+var today = [
+	{
+		date: '2019-1-28',
+		curr_year_snow: 0,
+		min_snow: 0,
+		mean_snow: 9,
+		max_snow: 21,
+		max_temp: -7,
+		mean_temp: -8,
+		min_temp: -10
+	}
+];
+
 barWrapper
-	.selectAll('.tempBar')
-	.data(weatherSnowData)
+	.selectAll('.presentLine')
+	// .data(weatherSnowData)
+	.data(today)
 	.enter()
 	.append('rect')
-	.attr('class', 'tempBar')
+	.attr('class', 'presentLine')
 	.attr('transform', function(d, i) {
-		return 'rotate(' + angle(d.date) + ')';
+		return 'rotate(' + angle(parseDate(d.date)) + ')';
 	})
-	.attr('width', 2)
+	.attr('width', 7)
 	.attr('height', function(d, i) {
-		return barScale(d.max_temp) - barScale(d.min_temp);
+		return barScale(innerRadius - 25) - barScale(d.min_temp);
 	})
-	.attr('x', -0.75)
+	.attr('x', -5)
+	// .attr('y', -2)
 	.attr('y', function(d, i) {
-		return barScale(d.min_temp);
+		return barScale(1);
 	})
-	.style('fill', function(d) {
+	.attr('rx', 10)
+	.style('opacity', 0.99)
+	.style('fill', 'violet')
+	.style('stroke', function(d) {
 		return colorScale(d.mean_temp);
 	});
 
@@ -340,7 +370,7 @@ barWrapper
 		return snowfallColorScale(d.mean_snow);
 	})
 	.attr('rx', '1px')
-	.style('opacity', 0.95);
+	.style('opacity', 0.99);
 
 barWrapper
 	.selectAll('.maxSnowBar')
@@ -366,7 +396,30 @@ barWrapper
 	})
 	.style('opacity', 0.25);
 
-//////////////// Create the gradient for the legend ///////////////////////
+// tempBar height is the difference between the minimum and maximum temperature
+// tempBar color is based on the mean temperature
+barWrapper
+	.selectAll('.tempBar')
+	.data(weatherSnowData)
+	.enter()
+	.append('rect')
+	.attr('class', 'tempBar')
+	.attr('transform', function(d, i) {
+		return 'rotate(' + angle(d.date) + ')';
+	})
+	.attr('width', 2)
+	.attr('height', function(d, i) {
+		return barScale(d.max_temp) - barScale(d.min_temp);
+	})
+	.attr('x', -0.75)
+	.attr('y', function(d, i) {
+		return barScale(d.min_temp);
+	})
+	.style('fill', function(d) {
+		return colorScale(d.mean_temp);
+	});
+
+//////////////// Create the gradient for the legend ////////////////
 //Extra scale since the color scale is interpolated
 var tempScale = d3.scale
 	.linear()
@@ -402,14 +455,14 @@ svg
 		return colorScale(tempPoint[i]);
 	});
 
-////////////////////////// Draw the legend ////////////////////////////////
+////////////////////////// Draw the legend /////////////////////////
 var legendWidth = Math.min(outerRadius * 2, 400);
 
 //Color Legend container
 var legendsvg = svg
 	.append('g')
 	.attr('class', 'legendWrapper')
-	.attr('transform', 'translate(' + 0 + ',' + (outerRadius + 70) + ')');
+	.attr('transform', 'translate(' + 0 + ',' + (outerRadius + 80) + ')');
 
 //Draw the Rectangle
 legendsvg

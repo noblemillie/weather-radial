@@ -2,17 +2,14 @@ body {
 	font-size: 10px;
 	font-family: 'Operator Mono', sans-serif;
 	font-weight: 400;
-	/* fill: #8c8c8c; */
-	/* text-align: center; */
-	background-color: black;
-	/* background-color: rgba(58, 58, 58, 0.903); */
+	/* background-color: black; */
+	background-color: rgba(38, 38, 38, 0.9);
 	height: 100%;
 	margin: 25px;
 }
 
 #weatherRadial {
 	/* background-color: snow; */
-	/* display: flex; */
 	/* background-color: rgb(187, 186, 186); */
 	padding: 15px;
 }
@@ -86,12 +83,18 @@ svg {
 
 .yearLine {
 	stroke: #aaaaaa;
+	opacity: 0.9;
 }
 
 .seasonLine {
-	stroke: violet;
-	/* stroke: purple; */
-	/* stroke-width: 3px; */
+	/* stroke: violet; */
+	stroke: purple;
+}
+
+.presentLine {
+	/* stroke: violet; */
+	/* stroke: white; */
+	stroke-width: 3px;
 }
 
 .axisText {
@@ -106,4 +109,38 @@ svg {
 	fill: none;
 	stroke: #e8e8e8;
 	stroke-width: 1px;
+}
+
+.dropdown-content li > span {
+	clear: both;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.card.large {
+	height: 750px;
+}
+
+.select-wrapper input.select-dropdown {
+	border-bottom: none;
+}
+
+.input-field {
+	margin-top: 0rem;
+}
+
+.card-year {
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 48px;
+}
+.row.desciptive-text {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.card.paragraph {
+	height: 495px;
+}
+
+.desc-para {
+	font-size: 16px;
 }

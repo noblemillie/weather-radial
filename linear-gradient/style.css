@@ -125,17 +125,27 @@ svg {
 }
 
 .input-field {
-	margin-top: 0rem;
+	/* margin-top: 0rem; */
+	/* text-align: center; */
+	background-color: powderblue;
+	justify-content: center;
+}
+select {
+	font-size: 30px;
+	/* margin-top: 0rem; */
+	/* background-color: powderblue; */
 }
 
 .card-year {
-	font-size: 19px;
+	font-size: 14px;
 	font-weight: 300;
 	line-height: 48px;
 }
 .row.desciptive-text {
 	margin-top: 20px;
 	margin-bottom: 0px;
+	border: 1px dotted blue;
+	background: linear-gradient(to right, powderblue, snow, purple);
 }
 .card.paragraph {
 	height: 495px;

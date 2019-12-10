@@ -32,15 +32,25 @@ let squawData = [];
 
 d3.json('historical.json', function(w) {
 	var datesArr = [];
+	var fahArr = [];
 	squawData = w.data.weather;
 
 	console.log('extract: ', w.data.weather);
 	var dates = squawData.forEach(function(d) {
-		datesArr.push(parseDate(d.date).toDateString());
+		datesArr.push(parseDate(d.date));
+		// datesArr.push(+d.maxtempF);
+		// datesArr.push(parseDate(d.date).toDateString());
 		// d.date = parseDate(d.date);
 		// console.log(`date: `, d.date);
 	});
-	console.log(`dates: `, datesArr);
+	var temps = squawData.forEach(function(d) {
+		fahArr.push([+d.mintempF, +d.maxtempF]);
+		// datesArr.push(parseDate(d.date).toDateString());
+		// d.date = parseDate(d.date);
+		// console.log(`date: `, d.date);
+	});
+	// console.log(`hist dates and temp: `, datesArr);
+	console.log(`hist temp: `, fahArr);
 
 	return squawData;
 });
@@ -52,8 +62,13 @@ var parseDate = d3.time.format('%Y-%m-%d').parse;
 //Turn strings into actual numbers/dates
 weatherSnowData.forEach(function(d) {
 	d.date = parseDate(d.date);
-	// console.log(`date: `, d.date);
+	// console.log(`weatherSnowData date: `, d.date);
 });
+
+// historical2018.forEach(function(d) {
+// 	d.date = parseDate(d.date);
+// 	// console.log(`historical2018 date: `, d.date);
+// });
 
 //Set the minimum inner radius and max outer radius of the chart
 var outerRadius = Math.min(width, height, 450) / 2,

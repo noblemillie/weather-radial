@@ -1,12 +1,12 @@
 //////////////////// Set up and initiate svg containers ///////////
 var margin = {
-	top: 50,
+	top: 180,
 	right: 70,
-	bottom: 80,
+	bottom: 180,
 	left: 0
 };
 var width = (window.innerWidth - margin.left - margin.right - 10) / 1.05;
-var height = window.innerHeight - margin.top - margin.bottom - 30;
+var height = (window.innerHeight - margin.top - margin.bottom) / 1.5;
 
 //SVG container
 var svg = d3
@@ -14,8 +14,6 @@ var svg = d3
 	.append('svg')
 	.attr('width', width + margin.left + margin.right)
 	.attr('height', height + margin.top + margin.bottom)
-	.style('background-color', 'rgba(11, 11, 11, 0.7)')
-	// .style('border', '1px solid cyan')
 	.append('g')
 	.attr(
 		'transform',
@@ -365,7 +363,6 @@ barWrapper
 	})
 	.attr('rx', 10)
 	.style('opacity', 0.99)
-	.style('fill', 'violet')
 	.style('stroke', function(d) {
 		return colorScale(d.mean_temp);
 	});

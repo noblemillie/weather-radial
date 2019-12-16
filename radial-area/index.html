@@ -1,56 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			body {
-				margin: 0;
-				font-family: 'Helvetica Neue', sans-serif;
-				background-color: rgba(238, 238, 238, 0.9);
-			}
-
-			svg {
-				background-color: rgba(38, 38, 38, 0.9);
-				/* margin: 0 auto; */
-				margin: 30px;
-				padding: 10vw;
-				display: table;
-				border: 1px solid cyan;
-			}
-
-			.area {
-				fill: steelblue;
-				fill-opacity: 0.3;
-				stroke: cyan;
-				stroke-width: 2px;
-			}
-
-			.tick circle {
-				fill: none;
-				/* stroke: #888; */
-				stroke: snow;
-			}
-
-			.tick line {
-				stroke: white;
-				/* stroke: snow; */
-				stroke: #888;
-			}
-
-			.tick text {
-				stroke: snow;
-				font-size: 12px;
-				text-anchor: middle;
-			}
-		</style>
-	</head>
-
-	<body>
 		<script src="https://d3js.org/d3.v5.min.js"></script>
 		<script src="https://d3js.org/d3-scale.v3.min.js"></script>
 		<script src="https://unpkg.com/geometric@2.0.1/build/geometric.min.js"></script>
+	</head>
+
+	<body>
 		<script>
 			// Dimensions
-			const margin = { left: 78, right: 78, top: 78, bottom: 78 };
+			const margin = { left: 18, right: 78, top: 78, bottom: 78 };
 			let width, height;
 
 			// Data
@@ -64,7 +23,7 @@
 			const xScale = d3
 				.scaleTime()
 				.domain(d3.extent(days))
-				.range([0, Math.PI * 2]);
+				.range([0, Math.PI * 2]); // range is the diameter of the circle
 
 			const yScale = d3.scaleRadial().domain([0, 60]);
 
@@ -184,12 +143,12 @@
 
 			// Functions for generating random data
 			function makeData() {
-				let v0 = randBetween(15, 25);
-				v1 = randBetween(40, 60);
+				let v0 = randBetween(0, 5);
+				v1 = randBetween(10, 30);
 
 				data = days.map(date => {
-					v1 = Math.min(v1 + random([-1.7, 2]), 80);
-					v0 = 50;
+					v1 = Math.min(v1 + random([-1.7, 2]), 50);
+					v0 = 5;
 					//           v0 = Math.min(Math.max(v0 + random([-1, 1]), 1), v1 - 5)
 					const obj = {
 						date,

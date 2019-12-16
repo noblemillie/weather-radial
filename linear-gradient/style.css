@@ -7,35 +7,56 @@ body {
 	height: 100%;
 	margin: 25px;
 }
+/* body {
+				margin: 0;
+				font-family: 'Helvetica Neue', sans-serif;
+				background-color: rgba(238, 238, 238, 0.9);
+			} */
+
+svg {
+	background-color: rgba(38, 38, 38, 0.9);
+	/* margin: 0 auto; */
+	margin: 30px;
+	padding: 10vw;
+	display: table;
+	border: 1px solid cyan;
+}
+
+.area {
+	fill: steelblue;
+	fill-opacity: 0.3;
+	stroke: cyan;
+	stroke-width: 2px;
+}
+
+.tick circle {
+	fill: none;
+	/* stroke: #888; */
+	stroke: snow;
+}
+
+.tick line {
+	stroke: white;
+	/* stroke: snow; */
+	stroke: #888;
+}
+
+.tick text {
+	stroke: snow;
+	font-size: 12px;
+	text-anchor: middle;
+}
 
 #weatherRadial {
 	/* background-color: snow; */
 	/* background-color: rgb(187, 186, 186); */
 	padding: 15px;
+	margin-left: 2vw;
 }
 
 svg {
-}
-
-.title {
-	font-size: 28px;
-	fill: #4f4f4f;
-	font-weight: 300;
-	text-anchor: start;
-}
-
-.subtitle {
-	font-size: 14px;
-	fill: #aaaaaa;
-	font-weight: 300;
-	text-anchor: start;
-}
-
-.credit {
-	font-size: 12px;
-	fill: #aaaaaa;
-	font-weight: 300;
-	text-anchor: start;
+	padding: 15px;
+	/* float: right; */
 }
 
 .axis path,
@@ -99,6 +120,7 @@ svg {
 
 .axisText {
 	fill: #c4c4c4;
+	fill: hsla(259, 58%, 27%, 0.487);
 	font-size: 11px;
 	font-weight: 300;
 	text-anchor: middle;
@@ -111,13 +133,69 @@ svg {
 	stroke-width: 1px;
 }
 
-.dropdown-content li > span {
-	clear: both;
-	color: rgba(0, 0, 0, 0.87);
+.subtitle {
+	font-size: 14px;
+	fill: #aaaaaa;
+	font-weight: 300;
+	text-anchor: start;
 }
 
-.card.large {
-	height: 750px;
+div.card {
+	margin: 15px;
+	padding: 5px;
+	height: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	border-radius: 15px;
+	opacity: 0.65;
+	/* float: center; */
+	/* height: 60vh; */
+	/* background-color: powderblue; */
+	/* background-color: rgba(126, 0, 126, 0.1); */
+}
+
+.title {
+	font-size: 30px;
+	fill: #4f4f4f;
+	font-weight: 300;
+	text-anchor: start;
+}
+
+.card.title {
+	padding: 10px;
+	font-size: 20px;
+	fill: #4f4f4f;
+	font-weight: 300;
+	text-anchor: start;
+}
+
+.card.subtitle {
+	padding: 5px;
+	font-size: 16px;
+	color: purple;
+	background-color: rgba(126, 0, 126, 0.1);
+	display: flex;
+	height: 2em;
+}
+
+.card-content {
+	/* margin: 10px; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/* align-items: flex-start; */
+	/* height: 30vh; */
+}
+
+.dropdown-content li > span {
+	clear: both;
+	/* color: rgba(0, 0, 0, 0.87); */
+}
+
+.card.paragraph {
+	/* height: 60vh; */
+	/* margin: 10px; */
+	background-color: rgba(126, 0, 126, 0.1);
 }
 
 .select-wrapper input.select-dropdown {
@@ -125,15 +203,15 @@ svg {
 }
 
 .input-field {
-	/* margin-top: 0rem; */
-	/* text-align: center; */
-	background-color: powderblue;
-	justify-content: center;
+	text-align: center;
+	color: purple;
+	background-color: rgba(126, 0, 126, 0.1);
+	/* float: right; */
 }
-select {
-	font-size: 30px;
-	/* margin-top: 0rem; */
-	/* background-color: powderblue; */
+
+.ski-season {
+	margin: 5px;
+	padding: 5px;
 }
 
 .card-year {
@@ -144,13 +222,63 @@ select {
 .row.desciptive-text {
 	margin-top: 20px;
 	margin-bottom: 0px;
-	border: 1px dotted blue;
-	background: linear-gradient(to right, powderblue, snow, purple);
+	border: 3px ridge powderblue;
+	/* border: 4px ridge violet; */
+	border-radius: 8px;
+	box-shadow: 8px 10px 15px #888888;
+	/* box-shadow: 0px 0px 8px 5px rgba(126, 0, 126, 0.2); */
+	background: linear-gradient(
+		to bottom,
+		rgb(168, 212, 255),
+		/* azure, */ white,
+		snow,
+		powderblue
+	);
 }
-.card.paragraph {
-	height: 495px;
+
+/* .credit {
+	fill: #aaaaaa;
+	font-weight: 300;
+	text-anchor: start;
+} */
+
+div.resources {
+	margin: 15px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	height: 7vh;
+	font-size: 18px;
+	margin-top: 12px;
+	padding: 10px;
+	border: 1px ridge rgba(126, 0, 126, 0.2);
+	border-radius: 8px;
+	background: rgba(35, 1, 47, 0.3);
+	/* background: rgba(126, 0, 126, 0.2); */
+	color: rgba(1, 218, 214, 0.509);
+	color: rgba(35, 250, 246, 0.861);
+	box-shadow: 0px 0px 8px 5px rgba(126, 0, 126, 0.3);
+}
+
+.card-credits {
+	margin-left: 300px;
 }
 
 .desc-para {
-	font-size: 16px;
+	color: rgb(245, 245, 245);
+	font-size: 12px;
+}
+
+.info {
+	margin-top: -590px;
+	display: flex;
+	flex-flow: column wrap;
+	/* justify-content: flex-start; */
+}
+
+.area {
+	fill: steelblue;
+	fill-opacity: 0.3;
+	stroke: cyan;
+	stroke-width: 2px;
 }

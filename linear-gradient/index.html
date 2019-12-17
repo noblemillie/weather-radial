@@ -10,24 +10,35 @@
 		<script src="https://d3js.org/d3-scale.v3.min.js"></script>
 		<script src="https://unpkg.com/geometric@2.0.1/build/geometric.min.js"></script>
 		<link
-			href="http://fonts.googleapis.com/css?family=Open+Sans:300,400"
+			href="https://fonts.googleapis.com/css?family=Akronim|Amatic+SC|Annie+Use+Your+Telescope|Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Chau+Philomene+One|Delius|Delius+Swash+Caps|Dosis|Flavors|Girassol|Gupter|Handlee|Iceland|Inria+Serif|Istok+Web|Kirang+Haerang|Metal+Mania|Montserrat|Nova+Slim|Open+Sans|Open+Sans+Condensed:300|Patrick+Hand+SC|Poor+Story|Quicksand|Yeon+Sung&display=swap"
 			rel="stylesheet"
-			type="text/css"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="weatherData.js"></script>
-		<script src="weatherSnowData.js"></script>
-		<script src="historical2018.js"></script>
-		<link
+		<!-- <script src="historical2018.js"></script> -->
+		<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"
-		/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		/> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> -->
 	</head>
 
 	<body>
+		<svg width="600" height="150">
+			<defs>
+				<text x="10" y="50" fill="red" font-size="60" id="monthlabel">
+					Month
+					<tspan x="120" y="90">
+						MOVEMBER
+					</tspan>
+				</text>
+			</defs>
+
+			<use xlink:href="#monthlabel" x="10" y="30" text="heeyyyyy"></use>
+		</svg>
+
 		<div id="weatherRadial"></div>
 
 		<!-- <div class="row info">
@@ -92,6 +103,6 @@
 			</div>
 		</div> -->
 		<script src="script.js"></script>
-		<script src="main.js"></script>
+		<!-- <script src="main.js"></script> -->
 	</body>
 </html>

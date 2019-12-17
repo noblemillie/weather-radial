@@ -6,27 +6,44 @@
 			src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
 			charset="utf-8"
 		></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3-scale.v3.min.js"></script>
+		<script src="https://unpkg.com/geometric@2.0.1/build/geometric.min.js"></script>
 		<link
-			href="http://fonts.googleapis.com/css?family=Open+Sans:300,400"
+			href="https://fonts.googleapis.com/css?family=Akronim|Amatic+SC|Annie+Use+Your+Telescope|Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Chau+Philomene+One|Delius|Delius+Swash+Caps|Dosis|Flavors|Girassol|Gupter|Handlee|Iceland|Inria+Serif|Istok+Web|Kirang+Haerang|Metal+Mania|Montserrat|Nova+Slim|Open+Sans|Open+Sans+Condensed:300|Patrick+Hand+SC|Poor+Story|Quicksand|Yeon+Sung&display=swap"
 			rel="stylesheet"
-			type="text/css"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="weatherData.js"></script>
-		<script src="weatherSnowData.js"></script>
-		<link
+		<!-- <script src="historical2018.js"></script> -->
+		<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"
-		/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		/> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> -->
 	</head>
 
 	<body>
-		<div class="row">
+		<svg width="600" height="150">
+			<defs>
+				<text x="10" y="50" fill="red" font-size="60" id="monthlabel">
+					Month
+					<tspan x="120" y="90">
+						MOVEMBER
+					</tspan>
+				</text>
+			</defs>
+
+			<use xlink:href="#monthlabel" x="10" y="30" text="heeyyyyy"></use>
+		</svg>
+
+		<div id="weatherRadial"></div>
+
+		<!-- <div class="row info">
 			<div class="col s12 m4">
-				<div class="card  ">
+				<div class="card">
 					<div class="card-content black-text">
 						<span class="card title">Winter Radial</span><br />
 						<span class="card subtitle">Squaw Valley Ski Resort</span>
@@ -37,7 +54,7 @@
 							<div class="col m6">
 								<div class="input-field">
 									<select>
-										<option value="14">2013-2014</option>
+										<option class="ski-season" value="14">2013-2014</option>
 										<option value="15">2014-2015</option>
 										<option value="16">2015-2016</option>
 										<option value="17">2016-2017</option>
@@ -49,42 +66,43 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="card paragraph">
-					<div class="card-content black-text">
-						<span class="card-title">Insights</span>
-						<p class="desc-para">
-							This chart shows the annual historic high and low temperatures
-							during the year at the Squaw Valley ski resort in Lake Tahoe. The
-							outer radius shows the current year daily snowfall overlaid in
-							white, with bars representing greatest historical snowfall totals
-							in the background <br />
-							<a
-								href="https://en.wikipedia.org/wiki/Climate_of_Mumbai"
-								target="_blank"
-								>Squaw Valley, Lake Tahoe, California</a
-							>, The High Sierra Mountain Range has a distinctly seasonal
-							climate, with heavy snowfall accumulating during the winter
-							moderate, non-humid summers.
-						</p>
-						<span class="card-title">Credits</span>
-						<p class="desc-para">
-							inspiration:
-							<a href="http://weather-radials.com/" target="_blank"
-								>Weather Radials</a
-							>
-							<br />
-							dataset:
-							<a href="https://www.squaw.com/" target="_blank"
-								>Squaw Valley Mountain Resort</a
-							>
-						</p>
+					<div class="card paragraph">
+						<div class="card-content black-text">
+							<span class="card-title">Insights</span>
+							<p class="desc-para">
+								This chart shows the annual historic high and low temperatures
+								during the year at the Squaw Valley ski resort in Lake Tahoe.
+								The outer radius shows the current year daily snowfall overlaid
+								in white, with bars representing greatest historical snowfall
+								totals in the background <br />
+								<a
+									href="https://en.wikipedia.org/wiki/Climate_of_Mumbai"
+									target="_blank"
+									>Squaw Valley, Lake Tahoe, California</a
+								>, The High Sierra Mountain Range has a distinctly seasonal
+								climate, with heavy snowfall accumulating during the winter
+								moderate, non-humid summers.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="weatherRadial"></div>
-		</div>
+			<div class="resources">
+				<span class="card-credits">Credits</span>
+				<p class="desc-para">
+					inspiration:
+					<a href="http://weather-radials.com/" target="_blank"
+						>Weather Radials</a
+					>
+					<br />
+					dataset:
+					<a href="https://www.squaw.com/" target="_blank"
+						>Squaw Valley Mountain Resort</a
+					>
+				</p>
+			</div>
+		</div> -->
 		<script src="script.js"></script>
-		<script src="main.js"></script>
+		<!-- <script src="main.js"></script> -->
 	</body>
 </html>

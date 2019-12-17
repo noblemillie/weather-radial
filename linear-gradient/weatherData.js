@@ -1,4 +1,4 @@
-var weatherSnowData = [
+var weatherData = [
 	{ date: '2019-1-1', curr_year_snow: 0, min_snow: 0, mean_snow: 3, max_snow: 25, max_temp: 1, mean_temp: -2, min_temp: -6 },
 	{ date: '2019-1-2', curr_year_snow: 0, min_snow: 0, mean_snow: 5, max_snow: 30, max_temp: 5, mean_temp: 2, min_temp: -1 },
 	{ date: '2019-1-3', curr_year_snow: 0, min_snow: 0, mean_snow: 6, max_snow: 28, max_temp: 3, mean_temp: -1, min_temp: -6 },

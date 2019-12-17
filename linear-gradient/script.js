@@ -1,22 +1,25 @@
 //////////////////// Set up and initiate svg containers ///////////
+// var margin = {
+// 	top: 180,
+// 	right: 0,
+// 	bottom: 180,
+// 	left: 0
+// };
 var margin = {
-	top: 50,
-	right: 20,
-	bottom: 80,
-	left: 20
+	top: 150,
+	right: 100,
+	bottom: 100,
+	left: 150
 };
-var width = (window.innerWidth - margin.left - margin.right - 10) / 2;
-var height = window.innerHeight - margin.top - margin.bottom - 40;
+var width = (window.innerWidth - margin.left - margin.right - 10) / 1.5;
+var height = (window.innerHeight - margin.top - margin.bottom) / 1.5;
 
 //SVG container
-var svg = d3
+var barSvg = d3
 	.select('#weatherRadial')
 	.append('svg')
-	.attr('width', width + margin.left + margin.right - 10)
-	.attr('height', height + margin.top + margin.bottom - 50)
-	// .style('background-color', 'snow')
-	.style('background-color', 'rgba(11, 11, 11, 0.7)')
-	.style('border', '3px solid cyan')
+	.attr('width', width + margin.left + margin.right)
+	.attr('height', height + margin.top + margin.bottom)
 	.append('g')
 	.attr(
 		'transform',
@@ -28,32 +31,55 @@ var svg = d3
 	);
 
 //////////////////// Load weather data ///////////////////
-let squawData = [];
+// let barData = [];
 
-d3.json('historical.json', function(w) {
-	var datesArr = [];
-	squawData = w.data.weather;
+// d3.json('historical.json', function(w) {
+// 	var datesArr = [];
+// 	var fahArr = [];
+// 	barData = w.data.weather;
 
-	console.log('extract: ', w.data.weather);
-	var dates = squawData.forEach(function(d) {
-		datesArr.push(parseDate(d.date).toDateString());
-		// d.date = parseDate(d.date);
-		// console.log(`date: `, d.date);
-	});
-	console.log(`dates: `, datesArr);
+// 	console.log('extract: ', w.data.weather);
+// 	var dates = barData.forEach(function(d) {
+// 		datesArr.push(parseDate(d.date));
+// 		// datesArr.push(+d.maxtempF);
+// 		// datesArr.push(parseDate(d.date).toDateString());
+// 		// d.date = parseDate(d.date);
+// 		// console.log(`date: `, d.date);
+// 	});
+// 	var temps = barData.forEach(function(d) {
+// 		fahArr.push([+d.mintempF, +d.maxtempF]);
+// 		// datesArr.push(parseDate(d.date).toDateString());
+// 		// d.date = parseDate(d.date);
+// 		// console.log(`date: `, d.date);
+// 	});
+// 	// console.log(`hist dates and temp: `, datesArr);
+// 	console.log(`hist temp: `, fahArr);
 
-	return squawData;
-});
+// 	return barData;
+// });
+
+// convert between celsius and fahrenheit
+// function celsiusToFahrenheit(c) {
+// 	const w = 1.8;
+// 	const b = 32;
+// 	const f = c * w + b;
+// 	return f;
+// }
 
 //////////////////////////// Create scales /////////////////////////
 //Parses a string into a date
 var parseDate = d3.time.format('%Y-%m-%d').parse;
 
 //Turn strings into actual numbers/dates
-weatherSnowData.forEach(function(d) {
+weatherData.forEach(function(d) {
 	d.date = parseDate(d.date);
-	// console.log(`date: `, d.date);
+	// console.log(`weatherData date: `, d.date);
 });
+
+// historical2018.forEach(function(d) {
+// 	d.date = parseDate(d.date);
+// 	// console.log(`historical2018 date: `, d.date);
+// });
 
 //Set the minimum inner radius and max outer radius of the chart
 var outerRadius = Math.min(width, height, 450) / 2,
@@ -102,13 +128,13 @@ var angle = d3.scale
 	.linear()
 	.range([-180, 180])
 	.domain(
-		d3.extent(weatherSnowData, function(d) {
+		d3.extent(weatherData, function(d) {
 			return d.date;
 		})
 	);
 
 //////////////////////////// Create Titles ////////////////////////////////
-var textWrapper = svg
+var textWrapper = barSvg
 	.append('g')
 	.attr('class', 'textWrapper')
 	.attr(
@@ -141,7 +167,7 @@ textWrapper
 
 ///////////////////////////// Create Axes /////////////////////////////////
 //Wrapper for the bars and to position it downward
-var barWrapper = svg
+var barWrapper = barSvg
 	.append('g')
 	.attr('transform', 'translate(' + 0 + ',' + 0 + ')');
 
@@ -215,6 +241,24 @@ barWrapper
 	.attr('x1', -innerRadius * 0.15)
 	.attr('y2', 0)
 	.attr('x2', -outerRadius * 1.1);
+
+barWrapper
+	.append('defs')
+	// .append('g')
+	.attr('id', 'december')
+	.append('text')
+	// .attr('width', 55)
+	// .attr('height', 75)
+	.attr('fill', 'red')
+	.attr('y', -outerRadius * 1.1)
+	.attr('dy', '2em')
+	.attr('transform', 'translate(40, -10) rotate(-15)')
+	.text('December');
+
+var dec = barWrapper
+	.append('g')
+	.attr('clip-path', 'url(#december)')
+	.attr('x', -75);
 
 //Add December label for reference
 barWrapper
@@ -324,7 +368,7 @@ var today = [
 
 barWrapper
 	.selectAll('.presentLine')
-	// .data(weatherSnowData)
+	// .data(weatherData)
 	.data(today)
 	.enter()
 	.append('rect')
@@ -343,14 +387,13 @@ barWrapper
 	})
 	.attr('rx', 10)
 	.style('opacity', 0.99)
-	.style('fill', 'violet')
 	.style('stroke', function(d) {
 		return colorScale(d.mean_temp);
 	});
 
 barWrapper
 	.selectAll('.snowBar')
-	.data(weatherSnowData)
+	.data(weatherData)
 	.enter()
 	.append('rect')
 	.attr('class', 'snowBar')
@@ -374,7 +417,7 @@ barWrapper
 
 barWrapper
 	.selectAll('.maxSnowBar')
-	.data(weatherSnowData)
+	.data(weatherData)
 	.enter()
 	.append('rect')
 	.attr('class', 'maxSnowBar')
@@ -400,7 +443,7 @@ barWrapper
 // tempBar color is based on the mean temperature
 barWrapper
 	.selectAll('.tempBar')
-	.data(weatherSnowData)
+	.data(weatherData)
 	.enter()
 	.append('rect')
 	.attr('class', 'tempBar')
@@ -419,7 +462,7 @@ barWrapper
 		return colorScale(d.mean_temp);
 	});
 
-//////////////// Create the gradient for the legend ////////////////
+//////////////// Create the gradient for the legend ///////////////
 //Extra scale since the color scale is interpolated
 var tempScale = d3.scale
 	.linear()
@@ -436,7 +479,7 @@ for (var i = 0; i < numStops; i++) {
 } //for i
 
 //Create the gradient
-svg
+barSvg
 	.append('defs')
 	.append('linearGradient')
 	.attr('id', 'legend-weather')
@@ -459,7 +502,7 @@ svg
 var legendWidth = Math.min(outerRadius * 2, 400);
 
 //Color Legend container
-var legendsvg = svg
+var legendsvg = barSvg
 	.append('g')
 	.attr('class', 'legendWrapper')
 	.attr('transform', 'translate(' + 0 + ',' + (outerRadius + 80) + ')');
@@ -506,3 +549,160 @@ legendsvg
 	.attr('class', 'axis')
 	.attr('transform', 'translate(0,' + 10 + ')')
 	.call(xAxis);
+
+// Data
+// let snowData = [];
+// const days = d3.timeDay.range(new Date(2019, 0, 1), new Date(2019, 11, 31));
+
+// // Scales
+// const xSnowScale = d3
+// 	.scaleTime()
+// 	.domain(d3.extent(days))
+// 	.range([0, Math.PI * 2]); // range is the diameter of the circle
+
+// const ySnowScale = d3.scaleRadial().domain([0, 60]);
+
+// // Generators
+// const areaGenerator = d3
+// 	.areaRadial()
+// 	.angle(d => xSnowScale(d.date))
+// 	.innerRadius(d => ySnowScale(d.v0))
+// 	.outerRadius(d => ySnowScale(d.v1))
+// 	.curve(d3.curveBasis);
+
+// Elements
+// const svg = d3.select('body').append('svg');
+// const g = barSvg.append('g');
+
+// const xAxis = g.append('g').attr('class', 'axis');
+
+// const xAxisTicks = xAxis
+// 	.selectAll('.tick')
+// 	.data(d3.timeMonth.every(1).range(...d3.extent(days)))
+// 	.enter()
+// 	.append('g')
+// 	.attr('class', 'tick');
+
+// xAxisTicks
+// 	.append('text')
+// 	.attr('dx', 65)
+// 	.attr('dy', -15)
+// 	.attr('transform', 'rotate(15)')
+// 	.text(d => `${d3.timeFormat('%b')(d)}.`);
+
+// xAxisTicks.append('line').attr('y2', -10);
+
+// const yAxis = g.append('g').attr('class', 'axis');
+
+// const yAxisTicks = yAxis
+// 	.selectAll('.tick')
+// 	.data(ySnowScale.ticks(5).slice(1))
+// 	.enter()
+// 	.append('g')
+// 	.attr('class', 'tick')
+// 	.style('opacity', 0.4);
+
+// const yAxisCircles = yAxisTicks.append('circle');
+
+// const yAxisTextTop = yAxisTicks
+// 	.append('text')
+// 	.attr('dy', -5)
+// 	.text(d => d);
+
+// const yAxisTextBottom = yAxisTicks
+// 	.append('text')
+// 	.attr('dy', 12)
+// 	.text(d => d);
+
+// Updater
+// const duration = 1750;
+// makeData();
+// redraw();
+// onresize = _ => redraw(true);
+//       d3.interval(_ => {
+//         makeData();
+//         redraw();
+//       }, duration * 12);
+
+// function redraw(resizing) {
+// 	const diameter = Math.min(innerWidth, innerHeight);
+// 	width = diameter - margin.left - margin.right;
+// 	height = diameter - margin.top - margin.bottom;
+
+// 	ySnowScale.range([0, height / 2]);
+
+// 	// svg
+// 	// 	.attr('width', width + margin.left + margin.right)
+// 	// 	.attr('height', height + margin.top + margin.bottom);
+
+// 	g.attr(
+// 		'transform',
+// 		`translate(${margin.left + width / 2}, ${margin.top + height / 2})`
+// 	);
+
+// 	// xAxisTicks.attr('transform', (d, i, e) => {
+// 	// 	const point = [width / 2, 0];
+// 	// 	const angle = (i / e.length) * 360;
+// 	// 	const rotated = geometric.pointRotate(point, 270 + angle);
+// 	// 	return `translate(${rotated}) rotate(${angle})`;
+// 	// });
+
+// 	// yAxisCircles.attr('r', d => ySnowScale(d));
+
+// 	// yAxisTextTop.attr('y', d => ySnowScale(d));
+
+// 	// yAxisTextBottom.attr('y', d => -ySnowScale(d));
+
+// 	// General update pattern for the area, whose data changes
+// 	// const area = g.selectAll('.area').data([snowData]);
+// 	const area = g
+// 		.selectAll('.area')
+// 		.data([snowData])
+// 		.attr('d', areaGenerator);
+
+// 	// if (resizing) {
+// 	// 	area.attr('d', areaGenerator);
+// 	// } else {
+// 	// 	area
+// 	// 		.transition()
+// 	// 		.duration(duration)
+// 	// 		.attr('d', areaGenerator);
+// 	// }
+
+// 	area
+// 		.enter()
+// 		.append('path')
+// 		.attr('class', 'area')
+// 		.attr('d', areaGenerator)
+// 		.style('opacity', 0)
+// 		.transition()
+// 		.duration(duration)
+// 		.style('opacity', 1);
+// }
+
+// Functions for generating random data
+// function makeData() {
+// 	v0 = randBetween(0, 5);
+// 	v1 = randBetween(10, 30);
+
+// 	snowData = days.map(date => {
+// 		v1 = Math.min(v1 + random([-1.7, 2]), 50);
+// 		v0 = 5;
+// 		//           v0 = Math.min(Math.max(v0 + random([-1, 1]), 1), v1 - 5)
+// 		const obj = {
+// 			date,
+// 			v1,
+// 			v0
+// 		};
+// 		console.log('areaObj: ', obj);
+// 		return obj;
+// 	});
+// }
+
+// function randBetween(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+// function random(arr) {
+// 	return arr[randBetween(0, arr.length - 1)];
+// }
